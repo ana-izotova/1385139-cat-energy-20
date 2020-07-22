@@ -1,7 +1,6 @@
 {
-  "name": "cat-energy-20",
-  "private": true,
-  "description": "Личный проект «Кэт энерджи» от HTML Academy",
+  "name": "2207-cat",
+  "description": "Верстка каталога и формы",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "stylelint": "13.6.1",
@@ -12,11 +11,9 @@
     "stylelint": "stylelint .",
     "test": "npm run editorconfig"
   },
-  "editorconfig-cli": [
-    "*.json",
-    "source/*.html"
-  ],
+  "editorconfig-cli": ["*.json", "source/*.html"],
   "engines": {
     "node": "12.18.2"
-  }
+  },
+  "keywords": []
 }
