@@ -1,10 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>Title</title>
+  <meta charset="utf-8"/>
+  <title>HTML Academy: Кэт энерджи</title>
 </head>
-<body>
-
+<body class="page__body">
+<header class="page-header">
+  <a class="page-header__logo" href="index.html">
+    <img alt="Логотип сайта Cat Energy" class="logo-img" src="">
+    <img alt="Cat Energy" class="logo-text" src="">
+  </a>
+  <nav class="main-nav">
+    <button class="main-nav__toggle" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+    <ul class="main-nav__list site-list">
+      <li class="site-list__item">
+        <a class="site-list__link" href="index.html">Главная</a>
+      </li>
+      <li class="site-list__item">
+        <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+      </li>
+      <li class="site-list__item">
+        <a class="site-list__link site-list__link--active">Подбор программы</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<main class="page-main">
+  <section class="page-main__program-select program-select">
+    <h1 class="program-select__header header">Подбор программы</h1>
+    <p class="program-select__content-text">
+      Заполните анкету, и мы подберем программу питания для вашего кота
+    </p>
+    <form class="program-select__form search-form" action="https://echo.htmlacademy.ru" method="get">
+      <fieldset class="search-form__basic-info">
+        <label class="search-form__label" for="input-name">Имя:*</label>
+        <input class="search-form__text-input" type="text" name="name" id="input-name" placeholder="Барсик" required>
+        <label class="search-form__label" for="input-weight">Вес (кг):*</label>
+        <input class="search-form__text-input" type="text" name="weight" id="input-weight" placeholder="7" required>
+        <label class="search-form__label" for="input-age">Возраст (лет):*</label>
+        <input class="search-form__text-input" type="text" name="age" id="input-age" placeholder="7" required>
+      </fieldset>
+      <fieldset class="search-form__goal">
+        <input class="search-form__radio" type="radio" name="goal" id="radio-lose-weight" checked>
+        <label class="search-form__label search-form__label--radio" for="radio-lose-weight">Похудение</label>
+        <input class="search-form__radio" type="radio" name="goal" id="radio-gain-weight">
+        <label class="search-form__label search-form__label--radio" for="radio-gain-weight">Набор массы</label>
+        <input class="search-form__radio" type="radio" name="goal" id="radio-advise-needed">
+        <label class="search-form__label search-form__label--radio" for="radio-advise-needed">Не знаю (Нужен ваш совет)</label>
+      </fieldset>
+      <fieldset class="search-form__contacts">
+        <legend class="search-form__legend">Контактные данные (владельца кота)</legend>
+        <label class="search-form__label" for="input-email">E-mail:*</label>
+        <input class="search-form__text-input" type="email" name="email" id="input-email" placeholder="kuklachev@gmail.com" required>
+        <label class="search-form__label" for="input-tel">Телефон:*</label>
+        <input class="search-form__text-input" type="tel" name="email" id="input-tel" placeholder="8 (960) 900-60-90" required>
+      </fieldset>
+      <fieldset class="search-form__comment">
+        <legend class="search-form__legend">Комментарий</legend>
+        <textarea class="search-form__textarea" name="comment" cols="30" rows="10" placeholder="Расскажите обо всех повАдках кота"></textarea>
+      </fieldset>
+      <fieldset class="search-form__comment">
+        <legend class="search-form__legend">Дополнительно</legend>
+        <input class="search-form__checkbox" type="checkbox" name="sugar-subs" id="checkbox-sugar-subs" checked>
+        <label class="search-form__label search-form__label--checkbox" for="checkbox-sugar-subs">Сахарозаменитель</label>
+        <input class="search-form__checkbox" type="checkbox" name="water" id="checkbox-water">
+        <label class="search-form__label search-form__label--checkbox" for="checkbox-water">Питьевая вода</label>
+        <input class="search-form__checkbox" type="checkbox" name="milk" id="checkbox-milk" checked>
+        <label class="search-form__label search-form__label--checkbox" for="checkbox-milk">Молоко</label>
+        <input class="search-form__checkbox" type="checkbox" name="vitamins" id="checkbox-vitamins" checked>
+        <label class="search-form__label search-form__label--checkbox" for="checkbox-vitamins">Витамины</label>
+      </fieldset>
+      <button class="search-form__submit-button button" type="submit">Отправить заявку</button>
+    </form>
+    <small class="program-select__legend">* — Обязательные поля</small>
+  </section>
+</main>
+<footer class="page-footer">
+  <section class="page-footer__contacts contacts">
+    <h2 class="contacts__header">Приглашаем к сотрудничеству дилеров!</h2>
+    <address class="contacts__address">
+      ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+    </address>
+    <img alt="Cat Energy на карте" class="contacts__map" src="">
+  </section>
+  <a class="page-footer__logo" href="index.html">
+    <img alt="Cat Energy" class="logo-text logo-text--large" src="">
+  </a>
+  <section class="page-footer__socials">
+    <h2 class="visually-hidden">Кэт Энерджи в социальных сетях</h2>
+    <ul class="socials-list">
+      <li class="socials-list__item">
+        <a aria-label="Вконтакте" class="socials-list__link" href=""></a>
+      </li>
+      <li class="socials-list__item">
+        <a aria-label="Инстаграм" class="socials-list__link" href=""></a>
+      </li>
+      <li class="socials-list__item">
+        <a aria-label="Фэйсбук" class="socials-list__link" href=""></a>
+      </li>
+    </ul>
+  </section>
+  <p class="page-footer__copyright copyright">
+    <span class="copyright__text">HTML Academy</span>
+    <a aria-label="HTML Academy" class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+      <img alt="Логотип HTML Academy" class="copyright__logo" src="">
+    </a>
+  </p>
+</footer>
 </body>
 </html>
