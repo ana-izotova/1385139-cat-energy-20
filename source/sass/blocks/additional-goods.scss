@@ -1,0 +1,39 @@
+.additional-goods {
+  margin-bottom: 35px;
+}
+
+.additional-goods__header {
+  position: relative;
+  margin-top: 28px;
+  margin-left: 20px;
+  margin-bottom: 35px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 53px;
+    height: 2px;
+    right: 0;
+    top: 50%;
+    background-color: $basic-green;
+  }
+}
+
+.additional-goods__promo-offer {
+  background-color: $basic_green;
+  width: 280px;
+  height: 289px;
+  margin-top: 39px;
+  padding-left: 58px;
+  padding-right: 61px;
+}
+
+.additional-goods__promo-offer-text {
+  font-family: $arial;
+
+  @include font(16px, 20px);
+  color: $white;
+  text-align: center;
+  margin: 0;
+  padding-top: 189px;
+}

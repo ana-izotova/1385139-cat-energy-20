@@ -1,0 +1,19 @@
+.contacts__main-wrap {
+  display: flex;
+  padding-top: 28px;
+  padding-bottom: 22px;
+}
+
+.contacts__address {
+  font-family: $arial;
+  line-height: 20px;
+  font-style: normal;
+}
+
+.contacts__map {
+  display: block;
+}
+
+.contacts--gray-bcg {
+  background-color: $basic-gray;
+}

@@ -1,0 +1,24 @@
+.page-footer__wrap {
+  background-color: $basic-gray;
+  padding-top: 39px;
+  padding-bottom: 22px;
+}
+
+.page-footer__logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.page-footer__socials {
+  margin-bottom: 22px;
+}

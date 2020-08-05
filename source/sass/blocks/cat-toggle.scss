@@ -1,0 +1,46 @@
+.cat-toggle {
+  display: flex;
+  align-items: center;
+}
+
+.cat-toggle__button {
+  width: 70px;
+  height: 40px;
+  font-family: inherit;
+
+  @include font(16px, 20px);
+  @include uppercase;
+  color: $black;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.cat-toggle__button:first-child {
+  margin-right: 2px;
+}
+
+.cat-toggle__button:last-child {
+  margin-left: 2px;
+}
+
+.cat-toggle__bar {
+  width: 84px;
+  height: 14px;
+  background-color: $white;
+  border: 1px solid $special_gray;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  padding: 4px 5px;
+  cursor: pointer;
+}
+
+.cat-toggle__active-bar {
+  width: 35px;
+  height: 6px;
+  background-color: $basic_green;
+  border-radius: 6px;
+  cursor: pointer;
+}

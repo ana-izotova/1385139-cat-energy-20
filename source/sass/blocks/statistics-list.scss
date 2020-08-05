@@ -1,0 +1,45 @@
+.statistics-list__main-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.statistics-list__wrap {
+  width: 50%;
+  text-align: center;
+  border: 1px solid $special_gray;
+  padding-top: 15px;
+}
+
+.statistics-list__wrap:first-child {
+  margin-right: 31px;
+}
+
+.statistics-list__number {
+  @include font(24px, 24px);
+  @include uppercase;
+  color: $black;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.statistics-list__description {
+  @include font(12px, 12px);
+  font-family: $arial;
+  padding: 0;
+  margin: 0;
+}
+
+.statistics-list__money-total {
+  display: flex;
+  justify-content: center;
+
+  @include font(14px, 20px);
+  @include uppercase;
+  text-align: center;
+}
+
+.statistics-list__money-number {
+  margin: 0;
+}

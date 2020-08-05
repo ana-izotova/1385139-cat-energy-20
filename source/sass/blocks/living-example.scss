@@ -1,0 +1,22 @@
+.living-example {
+  background-color: $background-gray;
+  padding-top: 27px;
+}
+
+.living-example__header {
+  padding-bottom: 33px;
+}
+
+.living-example__text {
+  font-family: $arial;
+}
+
+.living-example__wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.living-example__toggle {
+  display: flex;
+  justify-content: center;
+}

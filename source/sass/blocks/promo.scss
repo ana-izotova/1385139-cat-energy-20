@@ -1,0 +1,19 @@
+.promo {
+  display: flex;
+  justify-content: center;
+  background-color: #666666;
+  text-align: center;
+  color: $white;
+}
+
+.promo__header {
+  margin-top: 27px;
+  margin-bottom: 25px;
+}
+
+.promo__text {
+  line-height: 14px;
+
+  margin: 0;
+  margin-bottom: 302px;
+}
