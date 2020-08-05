@@ -1,0 +1,52 @@
+.meal-program {
+  position: relative;
+  background-color: $basic-gray;
+  padding: 30px 33px 18px 20px;
+}
+
+.meal-program__header {
+  margin-left: 71px;
+  margin-bottom: 29px;
+}
+
+.meal-program__text {
+  font-family: $arial;
+  padding-bottom: 25px;
+  border-bottom: 1px solid $border_gray-2;
+  margin: 0;
+}
+
+.meal-program__icon::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+
+  & .meal-program_icon-loosing {
+    width: 50px;
+    height: 53px;
+    background-image: url("http://placekitten.com/g/50/53");
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+
+  & .meal-program_icon-gaining {
+    width: 67px;
+    height: 50px;
+    background-image: url("http://placekitten.com/g/67/50");
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+}
+
+.meal-program__link {
+  display: block;
+
+  @include font(16px, 16px);
+  @include uppercase;
+  color: $black;
+  margin-top: 19px;
+
+  &:active {
+    opacity: 0.3;
+  }
+}

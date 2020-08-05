@@ -1,0 +1,17 @@
+.program-select {
+  padding-top: 27px;
+  padding-bottom: 32px;
+}
+
+.program-select__header {
+  color: $black;
+  margin-bottom: 37px;
+}
+
+.program-select__text {
+  @include font(14px, 18px);
+  @include uppercase;
+  color: $black;
+  margin: 0;
+  margin-bottom: 39px;
+}

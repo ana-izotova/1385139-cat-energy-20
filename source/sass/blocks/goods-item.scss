@@ -1,0 +1,28 @@
+.goods-item {
+  border-top: 1px solid $special_gray-2;
+  padding-top: 19px;
+  padding-bottom: 25px;
+}
+
+.goods-item__wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.goods-item__image-wrapper {
+  width: 50%;
+}
+
+.goods-item__info {
+  width: 50%;
+}
+
+.goods-item__order-button {
+  margin-top: 13px;
+  width: 100%;
+}
+
+.goods-item__header {
+  margin-right: 60px;
+  margin-bottom: 18px;
+}

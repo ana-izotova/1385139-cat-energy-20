@@ -1,0 +1,23 @@
+.page-header {
+  position: relative;
+  padding-top: 12px;
+  border-bottom: 1px solid $border_gray-2;
+}
+
+.page-header__wrap {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.page-header__logo {
+  margin-bottom: 16px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}

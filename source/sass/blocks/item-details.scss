@@ -1,0 +1,22 @@
+.item-details {
+  display: grid;
+  grid-gap: 6px;
+
+  @include font(12px, 14px);
+  font-family: $arial;
+  margin: 0;
+}
+
+.item-details__inner-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.item-details__title {
+  margin: 0;
+}
+
+.item-details__data {
+  text-align: right;
+  margin: 0;
+}

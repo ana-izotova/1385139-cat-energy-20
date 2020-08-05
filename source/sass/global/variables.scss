@@ -1,0 +1,37 @@
+// Color variables:
+
+$white: #ffffff;
+$basic_green: #68b738;
+$basic_gray: #f2f2f2;
+$black: #000000;
+$special_gray-2: #ebebeb;
+$special_gray: #cdcdcd;
+$special_gray-3: #666666;
+$special_dark-gray: #444444;
+$special_dark-gray-2: #222222;
+$status_error: #ff8282;
+$basic_green-2: #5eaa2f;
+$border_gray: #e6e6e6;
+$border_gray-2: #d9d9d9;
+$background-gray: #eaeaea;
+
+$transparent-white: rgba(255, 255, 255, 0.3);
+
+// Shadows:
+
+$shadow_normal: 0 1px 3px rgba(0, 0, 0, 0.16);
+$shadow_hover: 0 2px 4px rgba(0, 0, 0, 0.19);
+$shadow-pressed: 0 3px 5px rgba(0, 0, 0, 0.2);
+
+
+// Viewports:
+
+$mobile-width: 320px;
+$mobile-width-only: 767px;
+$tablet-width: 768px;
+$desktop-width: 1200px;
+
+// Fonts
+
+$oswald: "Oswald", "Verdana", sans-serif;
+$arial: "Arial", sans-serif;

@@ -1,0 +1,35 @@
+.how-it-works {
+  padding-bottom: 42px;
+}
+
+.how-it-works__header {
+  margin-bottom: 28px;
+}
+
+.how-it-works__list {
+  @include list-reset;
+  font-family: $arial;
+}
+
+.how-it-works__item {
+  position: relative;
+}
+
+.how-it-works__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.how-it-works__text {
+  margin: 0;
+  margin-left: 80px;
+}
+
+.how-it-works__icon::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-color: $basic_green;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
