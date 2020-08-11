@@ -8,6 +8,8 @@
   color: $white;
   text-transform: uppercase;
 
+  @include font(16px, 20px);
+
   &:hover,
   &:focus {
     background-color: $basic_green-2;

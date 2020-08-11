@@ -2,21 +2,10 @@
   margin-bottom: 35px;
 }
 
-.additional-goods__header {
-  position: relative;
+.additional-goods__heading {
+  display: flex;
   margin-top: 28px;
-  margin-left: 20px;
   margin-bottom: 35px;
-
-  &::after {
-    position: absolute;
-    content: "";
-    width: 53px;
-    height: 2px;
-    right: 0;
-    top: 50%;
-    background-color: $basic-green;
-  }
 }
 
 .additional-goods__promo-offer {

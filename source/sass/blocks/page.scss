@@ -3,9 +3,9 @@
 }
 
 .page__body {
+  min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
-  background-color: #e5e5e5;
   color: $special_dark-gray;
   font-family: $oswald;
   margin: 0;
@@ -16,7 +16,8 @@
 .page__wrap {
   width: $mobile-width;
   background-color: $white;
-  margin: 0;
-  margin-left: auto;
-  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    min-width: $tablet-width;
+  }
 }

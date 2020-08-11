@@ -1,1 +1,42 @@
 // Начните писать стили здесь
+// Global
+
+@import "global/variables.scss";
+@import "global/fonts.scss";
+@import "global/global.scss";
+@import "global/mixins.scss";
+
+// Additional parts
+
+@import "blocks/button.scss";
+@import "blocks/heading.scss";
+
+// Blocks
+
+@import "blocks/page.scss";
+@import "blocks/container.scss";
+@import "blocks/page-header.scss";
+@import "blocks/logo.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+@import "blocks/page-main.scss";
+@import "blocks/promo.scss";
+@import "blocks/programs.scss";
+@import "blocks/meal-program.scss";
+@import "blocks/how-it-works.scss";
+@import "blocks/living-example.scss";
+@import "blocks/statistics-list.scss";
+@import "blocks/cat-slider.scss";
+@import "blocks/cat-toggle.scss";
+@import "blocks/catalog.scss";
+@import "blocks/goods-item.scss";
+@import "blocks/item-details.scss";
+@import "blocks/more-goods.scss";
+@import "blocks/additional-goods.scss";
+@import "blocks/add-goods-list.scss";
+@import "blocks/program-select.scss";
+@import "blocks/search-form.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/contacts.scss";
+@import "blocks/socials-list.scss";
+@import "blocks/copyright.scss";
