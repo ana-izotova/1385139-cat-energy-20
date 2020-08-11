@@ -5,7 +5,7 @@
 }
 
 .meal-program__header {
-  margin-left: 71px;
+  padding-left: 71px;
   margin-bottom: 29px;
 }
 
@@ -16,26 +16,32 @@
   margin: 0;
 }
 
-.meal-program__icon::before {
-  content: " ";
+.meal-program__icon-loosing::before {
+  content: "";
   position: absolute;
-  top: 0;
+  top: 21px;
+  left: 22px;
+  width: 50px;
+  height: 53px;
+  //background-image: url("http://placekitten.com/g/50/53");
+  //background-position: top center;
+  //background-repeat: no-repeat;
+  background-color: #68b738;
+  border: 1px solid black;
+}
 
-  & .meal-program_icon-loosing {
-    width: 50px;
-    height: 53px;
-    background-image: url("http://placekitten.com/g/50/53");
-    background-position: top center;
-    background-repeat: no-repeat;
-  }
-
-  & .meal-program_icon-gaining {
-    width: 67px;
-    height: 50px;
-    background-image: url("http://placekitten.com/g/67/50");
-    background-position: top center;
-    background-repeat: no-repeat;
-  }
+.meal-program__icon-gaining::before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: 13px;
+  width: 67px;
+  height: 50px;
+  //background-image: url("http://placekitten.com/g/67/50");
+  //background-position: top center;
+  //background-repeat: no-repeat;
+  background-color: #68b738;
+  border: 1px solid black;
 }
 
 .meal-program__link {

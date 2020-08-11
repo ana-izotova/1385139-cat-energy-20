@@ -2,7 +2,8 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="utf-8"/>
-  <title>HTML Academy: Кэт энерджи</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Подбор программы питания "Кэт энерджи"</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
@@ -44,15 +45,15 @@
             <div class="search-form__wrap container">
               <p class="search-form__field">
                 <label class="search-form__label" for="input-name">Имя:*</label>
-                <input class="search-form__text-input" type="text" name="name" id="input-name" value="Барсик" required>
+                <input class="search-form__text-input" type="text" name="name" id="input-name" placeholder="Барсик" required>
               </p>
               <p class="search-form__field">
                 <label class="search-form__label" for="input-weight">Вес&nbsp;(кг):*</label>
-                <input class="search-form__text-input" type="text" name="weight" id="input-weight" value="7" required>
+                <input class="search-form__text-input" type="text" name="weight" id="input-weight" placeholder="7" required>
               </p>
               <p class="search-form__field">
                 <label class="search-form__label" for="input-age">Возраст&nbsp;(лет):*</label>
-                <input class="search-form__text-input" type="text" name="age" id="input-age" value="7" required>
+                <input class="search-form__text-input" type="text" name="age" id="input-age" placeholder="7" required>
               </p>
             </div>
           </div>
@@ -73,31 +74,39 @@
             </div>
           </div>
           <div class="search-form__contacts form-group">
+            <b class="search-form__heading heading heading--additional">
+              <span class="search-form__header heading--additional-text">Контактные данные (владельца кота)</span>
+            </b>
             <div class="container">
-              <b class="search-form__header">Контактные данные (владельца кота)</b>
               <div class="search-form__wrap">
                 <p class="search-form__field">
                   <label class="search-form__label" for="input-email">E&#8209;mail:*</label>
-                  <input class="search-form__text-input" type="email" name="email" id="input-email" value="kuklachev@gmail.com" required>
+                  <input class="search-form__text-input" type="email" name="email" id="input-email" placeholder="kuklachev@gmail.com" required>
                 </p>
                 <p class="search-form__field">
                   <label class="search-form__label" for="input-tel">Телефон:*</label>
-                  <input class="search-form__text-input" type="tel" name="tel" id="input-tel" value="8 (960) 900-60-90" required>
+                  <input class="search-form__text-input" type="tel" name="tel" id="input-tel" placeholder="8 (960) 900-60-90" required>
                 </p>
               </div>
             </div>
           </div>
           <div class="search-form__comment form-group">
+            <b class="search-form__heading heading heading--additional">
+              <span class="search-form__header heading--additional-text">Комментарий</span>
+            </b>
             <div class="container">
-              <b class="search-form__header">Комментарий</b>
               <label for="comment" aria-label="Оставьте ваш комментарий">
-                <textarea class="search-form__textarea" name="comment" id="comment">Расскажите обо всех повадках кота</textarea>
+                <textarea class="search-form__textarea" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
               </label>
             </div>
           </div>
           <div class="search-form__additional form-group">
+            <b class="search-form__heading heading heading--additional">
+              <span class="search-form__header heading--additional-text">
+                Дополнительно
+              </span>
+            </b>
             <div class="container">
-              <b class="search-form__header">Дополнительно</b>
               <div class="search-form__wrap">
                 <p class="search-form__field">
                   <input class="search-form__checkbox visually-hidden" type="checkbox" name="sugar-subs" id="checkbox-sugar-subs" checked>
