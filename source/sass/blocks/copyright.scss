@@ -4,6 +4,10 @@
   align-items: center;
   color: $special_dark-gray;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+  }
 }
 
 .copyright__text {
@@ -21,6 +25,10 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 22px;
   }
 }
 

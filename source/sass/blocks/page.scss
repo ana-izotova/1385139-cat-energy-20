@@ -11,6 +11,10 @@
   margin: 0;
 
   @include font (14px, 18px);
+
+  @media (min-width: $tablet-width) {
+    @include font (16px, 24px);
+  }
 }
 
 .page__wrap {
@@ -19,5 +23,10 @@
 
   @media (min-width: $tablet-width) {
     min-width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    margin: 0 auto;
   }
 }

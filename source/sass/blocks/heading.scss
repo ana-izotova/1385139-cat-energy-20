@@ -2,17 +2,28 @@
   @include font(36px, 36px);
   font-weight: normal;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    @include font(60px, 60px);
+  }
 }
 
 .heading--programs {
   @include font(24px, 37px);
   @include uppercase;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    @include font(36px, 36px);
+  }
 }
 
 .heading--h-ex {
-  line-height: 40px;
   color: $black;
+
+  @media (min-width: $mobile-width-only) {
+    line-height: 40px;
+  }
 }
 
 .heading--invite {

@@ -4,21 +4,51 @@
   background-color: #666666;
   text-align: center;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+    text-align: left;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .promo .container {
+    padding-bottom: 526px;
+  }
 }
 
 .promo__header {
   margin-top: 27px;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-bottom: 41px;
+  }
 }
 
 .promo__text {
   line-height: 14px;
 
+  @include uppercase;
   margin: 0;
   margin-bottom: 302px;
+
+  @media (min-width: $tablet-width) {
+    @include font(20px, 20px);
+    margin-bottom: 20px;
+  }
 }
 
 .promo__link {
   font-size: inherit;
   line-height: inherit;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    height: 54px;
+    width: 244px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
 }

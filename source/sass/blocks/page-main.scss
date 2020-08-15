@@ -1,7 +1,38 @@
 .page-main__promo {
   margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 80px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 82px;
+  }
 }
 
 .page-main__programs {
   margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
+  }
+}
+//сюда или в блокк хау ит воркс???
+.page-main__description {
+  padding-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 47px;
+    border-bottom: 1px solid $background-gray;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 205px;
+    border-bottom: 0;
+  }
 }

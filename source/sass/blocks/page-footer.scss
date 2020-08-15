@@ -1,7 +1,21 @@
 .page-footer__wrap {
+  display: grid;
   background-color: $basic-gray;
   padding-top: 39px;
   padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 55px;
+    padding-bottom: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 57px;
+    padding-bottom: 58px;
+  }
 }
 
 .page-footer__logo {
@@ -17,8 +31,23 @@
   &:active {
     opacity: 0.6;
   }
+
+  @media (min-width: $tablet-width) {
+    justify-content: start;
+    margin: 0;
+  }
 }
 
 .page-footer__socials {
+  border-top: 1px solid $border_gray-2;
+  border-bottom: 1px solid $border_gray-2;
   margin-bottom: 22px;
+  padding-top: 20px;
+  padding-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
 }

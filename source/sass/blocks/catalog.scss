@@ -2,4 +2,9 @@
   color: $black;
   margin-top: 27px;
   margin-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 3px;
+    margin-bottom: 164px;
+  }
 }

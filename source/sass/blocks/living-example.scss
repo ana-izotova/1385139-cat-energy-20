@@ -1,16 +1,46 @@
 .living-example {
   background-color: $background-gray;
   padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    padding-top: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    background-color: $background-gray;
+    padding-top: 70px;
+  }
 }
 
 .living-example__header {
-  padding-bottom: 33px;
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: -146px;
+    margin: 0;
+  }
 }
 
 .living-example__text {
   font-family: $arial;
   margin: 0;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
+    margin-bottom: 69px;
+  }
 }
 
 .living-example__wrap {
