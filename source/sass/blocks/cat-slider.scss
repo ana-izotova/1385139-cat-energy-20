@@ -1,3 +1,29 @@
 .cat-slider {
+  position: relative;
+  padding-top: 232px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 552px;
+    padding-bottom: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 690px;
+    height: 656px;
+    padding-top: 555px;
+    padding-bottom: 67px;
+  }
+}
+
+.cat-slider__list {
   @include list-reset;
+  margin-bottom: 23px;
+}
+
+.cat-slider__item {
+  display: none;
+}
+
+.cat-slider__current {
+  display: block;
 }

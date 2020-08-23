@@ -7,13 +7,15 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
-  <div class="page__wrap">
-    <header class="page-header">
-      <div class="page-header__wrap container">
-        <a class="page-header__logo" href="index.html">
-          <img src="img/logo-mobile.svg" width="190px" alt="Логотип сайта Cat Energy">
-        </a>
-      </div>
+  <header class="page-header">
+    <div class="page-header__inner container">
+      <a class="page-header__logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img src="img/logo-mobile.svg" width="190" height="16" alt="Логотип сайта Cat Energy">
+        </picture>
+      </a>
       <nav class="main-nav main-nav--opened">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -30,132 +32,133 @@
           </li>
         </ul>
       </nav>
-    </header>
-    <main class="page-main">
-      <section class="page-main__program-select program-select">
-        <div class="container">
-          <h1 class="program-select__header heading">Подбор программы</h1>
-          <p class="program-select__text">
-            Заполните анкету, и мы подберем<br>
-            программу питания для вашего кота
-          </p>
+    </div>
+  </header>
+  <main class="page-main">
+    <section class="program-select">
+      <div class="container">
+        <h1 class="program-select__header heading">Подбор программы</h1>
+        <p class="program-select__text">
+          Заполните анкету, и мы подберем<br>
+          программу питания для вашего кота
+        </p>
+      </div>
+      <form class="program-select__form search-form" action="https://echo.htmlacademy.ru" method="get">
+        <div class="search-form__first-block form-group container">
+          <div class="search-form__basic-info search-form__wrap">
+            <p class="search-form__field">
+              <label class="search-form__label" for="input-name">Имя:*</label>
+              <input class="search-form__text-input" type="text" name="name" id="input-name" placeholder="Барсик" required>
+            </p>
+            <p class="search-form__field">
+              <label class="search-form__label" for="input-weight">Вес&nbsp;(кг):*</label>
+              <input class="search-form__text-input" type="text" name="weight" id="input-weight" placeholder="7" required>
+            </p>
+            <p class="search-form__field">
+              <label class="search-form__label" for="input-age">Возраст&nbsp;(лет):*</label>
+              <input class="search-form__text-input" type="text" name="age" id="input-age" placeholder="7" required>
+            </p>
+          </div>
+          <div class="search-form__goal search-form__wrap">
+            <p class="search-form__field">
+              <input class="search-form__radio visually-hidden" type="radio" name="goal" id="radio-lose-weight" checked>
+              <label class="search-form__label search-form__label--radio" for="radio-lose-weight">Похудение</label>
+            </p>
+            <p class="search-form__field">
+              <input class="search-form__radio visually-hidden" type="radio" name="goal" id="radio-gain-weight" disabled>
+              <label class="search-form__label search-form__label--radio" for="radio-gain-weight">Набор массы</label>
+            </p>
+            <p class="search-form__field">
+              <input class="search-form__radio visually-hidden" type="radio" name="goal" id="radio-advise-needed">
+              <label class="search-form__label search-form__label--radio" for="radio-advise-needed">Не знаю (Нужен ваш совет)</label>
+            </p>
+          </div>
         </div>
-        <form class="program-select__form search-form" action="https://echo.htmlacademy.ru" method="get">
-          <div class="search-form__basic-info form-group">
-            <div class="search-form__wrap container">
-              <p class="search-form__field">
-                <label class="search-form__label" for="input-name">Имя:*</label>
-                <input class="search-form__text-input" type="text" name="name" id="input-name" placeholder="Барсик" required>
-              </p>
-              <p class="search-form__field">
-                <label class="search-form__label" for="input-weight">Вес&nbsp;(кг):*</label>
-                <input class="search-form__text-input" type="text" name="weight" id="input-weight" placeholder="7" required>
-              </p>
-              <p class="search-form__field">
-                <label class="search-form__label" for="input-age">Возраст&nbsp;(лет):*</label>
-                <input class="search-form__text-input" type="text" name="age" id="input-age" placeholder="7" required>
-              </p>
-            </div>
+        <div class="search-form__contacts form-group">
+          <b class="search-form__heading heading heading--additional">
+            <span class="search-form__header heading--additional-text">Контактные данные (владельца кота)</span>
+          </b>
+          <div class="container search-form__wrap">
+            <p class="search-form__field">
+              <label class="search-form__label" for="input-email">E&#8209;mail:*</label>
+              <input class="search-form__text-input" type="email" name="email" id="input-email" placeholder="kuklachev@gmail.com" required>
+            </p>
+            <p class="search-form__field">
+              <label class="search-form__label" for="input-tel">Телефон:*</label>
+              <input class="search-form__text-input" type="tel" name="tel" id="input-tel" placeholder="8 (960) 900-60-90" required>
+            </p>
           </div>
-          <div class="search-form__goal form-group">
-            <div class="search-form__wrap container">
-              <p class="search-form__field">
-                <input class="search-form__radio visually-hidden" type="radio" name="goal" id="radio-lose-weight" checked>
-                <label class="search-form__label search-form__label--radio" for="radio-lose-weight">Похудение</label>
-              </p>
-              <p class="search-form__field">
-                <input class="search-form__radio visually-hidden" type="radio" name="goal" id="radio-gain-weight" disabled>
-                <label class="search-form__label search-form__label--radio" for="radio-gain-weight">Набор массы</label>
-              </p>
-              <p class="search-form__field">
-                <input class="search-form__radio visually-hidden" type="radio" name="goal" id="radio-advise-needed">
-                <label class="search-form__label search-form__label--radio" for="radio-advise-needed">Не знаю (Нужен ваш совет)</label>
-              </p>
-            </div>
-          </div>
-          <div class="search-form__contacts form-group">
-            <b class="search-form__heading heading heading--additional">
-              <span class="search-form__header heading--additional-text">Контактные данные (владельца кота)</span>
-            </b>
-            <div class="container">
-              <div class="search-form__wrap">
-                <p class="search-form__field">
-                  <label class="search-form__label" for="input-email">E&#8209;mail:*</label>
-                  <input class="search-form__text-input" type="email" name="email" id="input-email" placeholder="kuklachev@gmail.com" required>
-                </p>
-                <p class="search-form__field">
-                  <label class="search-form__label" for="input-tel">Телефон:*</label>
-                  <input class="search-form__text-input" type="tel" name="tel" id="input-tel" placeholder="8 (960) 900-60-90" required>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="search-form__comment form-group">
-            <b class="search-form__heading heading heading--additional">
-              <span class="search-form__header heading--additional-text">Комментарий</span>
-            </b>
-            <div class="container">
-              <label for="comment" aria-label="Оставьте ваш комментарий">
-                <textarea class="search-form__textarea" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
-              </label>
-            </div>
-          </div>
-          <div class="search-form__additional form-group">
-            <b class="search-form__heading heading heading--additional">
-              <span class="search-form__header heading--additional-text">
-                Дополнительно
-              </span>
-            </b>
-            <div class="container">
-              <div class="search-form__wrap">
-                <p class="search-form__field">
-                  <input class="search-form__checkbox visually-hidden" type="checkbox" name="sugar-subs" id="checkbox-sugar-subs" checked>
-                  <label class="search-form__label search-form__label--checkbox" for="checkbox-sugar-subs">Сахарозаменитель</label>
-                </p>
-                <p class="search-form__field">
-                  <input class="search-form__checkbox visually-hidden" type="checkbox" name="water" id="checkbox-water" checked disabled>
-                  <label class="search-form__label search-form__label--checkbox" for="checkbox-water">Питьевая вода</label>
-                </p>
-                <p class="search-form__field">
-                  <input class="search-form__checkbox visually-hidden" type="checkbox" name="milk" id="checkbox-milk" checked>
-                  <label class="search-form__label search-form__label--checkbox" for="checkbox-milk">Молоко</label>
-                </p>
-                <p class="search-form__field">
-                  <input class="search-form__checkbox visually-hidden" type="checkbox" name="vitamins" id="checkbox-vitamins" checked>
-                  <label class="search-form__label search-form__label--checkbox" for="checkbox-vitamins">Витамины</label>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="search-form__footer container">
-            <button class="search-form__submit-button button" type="submit">Отправить заявку</button>
-            <small class="search-form__legend">* — Обязательные поля</small>
-          </div>
-        </form>
-      </section>
-    </main>
-    <footer class="page-footer">
-      <section class="page-footer__contacts contacts contacts--gray-bcg">
-        <div class="contacts__main-wrap container">
-          <h2 class="contacts__header heading heading--invite">Приглашаем к сотрудничеству дилеров!</h2>
-          <address class="contacts__address">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-          </address>
         </div>
-        <div class="contacts_wrap">
-          <img class="contacts__map" src="http://placekitten.com/g/320/362" width="320" height="362" alt="Cat Energy на карте">
+        <div class="search-form__comment form-group">
+          <b class="search-form__heading heading heading--additional">
+            <span class="search-form__header heading--additional-text">Комментарий</span>
+          </b>
+          <div class="container">
+            <label for="comment" aria-label="Оставьте ваш комментарий">
+              <textarea class="search-form__textarea" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </label>
+          </div>
         </div>
-      </section>
-      <div class="page-footer__wrap container">
-        <a class="page-footer__logo" href="index.html">
-          <img src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
-        </a>
-        <section class="page-footer__socials">
-          <h2 class="visually-hidden">Кэт Энерджи в социальных сетях</h2>
-          <ul class="socials-list">
-            <li class="socials-list__item">
-              <a class="socials-list__link" target="_blank" href="" aria-label="Вконтакте">
-                <svg class="socials-list__icon socials-list__vk"><path fill="currentColor" d="M17.6,12c-0.3,0-0.9-0.1-1.5-0.5c-0.5-0.3-0.9-0.7-1.3-1.2c-0.3-0.3-0.9-0.9-1.1-0.9c-0.2,0.1-0.4,0.7-0.3,1.2
+        <div class="search-form__additional form-group">
+          <b class="search-form__heading heading heading--additional">
+            <span class="search-form__header heading--additional-text">
+              Дополнительно
+            </span>
+          </b>
+          <div class="container">
+            <div class="search-form__wrap">
+              <p class="search-form__field">
+                <input class="search-form__checkbox visually-hidden" type="checkbox" name="sugar-subs" id="checkbox-sugar-subs" checked>
+                <label class="search-form__label search-form__label--checkbox" for="checkbox-sugar-subs">Сахарозаменитель</label>
+              </p>
+              <p class="search-form__field">
+                <input class="search-form__checkbox visually-hidden" type="checkbox" name="water" id="checkbox-water" checked disabled>
+                <label class="search-form__label search-form__label--checkbox" for="checkbox-water">Питьевая вода</label>
+              </p>
+              <p class="search-form__field">
+                <input class="search-form__checkbox visually-hidden" type="checkbox" name="milk" id="checkbox-milk" checked>
+                <label class="search-form__label search-form__label--checkbox" for="checkbox-milk">Молоко</label>
+              </p>
+              <p class="search-form__field">
+                <input class="search-form__checkbox visually-hidden" type="checkbox" name="vitamins" id="checkbox-vitamins" checked>
+                <label class="search-form__label search-form__label--checkbox" for="checkbox-vitamins">Витамины</label>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="search-form__footer container">
+          <button class="search-form__submit-button button" type="submit">Отправить заявку</button>
+          <small class="search-form__legend">* — Обязательные поля</small>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <section class="page-footer__contacts contacts contacts--gray-bcg">
+      <div class="contacts__main-wrap container">
+        <h2 class="contacts__header heading heading--invite">Приглашаем к сотрудничеству дилеров!</h2>
+        <address class="contacts__address">
+          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+        </address>
+      </div>
+      <div class="contacts__inner container">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+          <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="400" srcset="img/bg-map-mobile@2x.png 2x" alt="Cat Energy на карте">
+        </picture>
+      </div>
+    </section>
+    <div class="page-footer__wrap container">
+      <a class="page-footer__logo" href="index.html">
+        <img src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
+      </a>
+      <section class="page-footer__socials">
+        <h2 class="visually-hidden">Кэт Энерджи в социальных сетях</h2>
+        <ul class="socials-list">
+          <li class="socials-list__item">
+            <a class="socials-list__link" target="_blank" href="" aria-label="Вконтакте">
+              <svg class="socials-list__icon socials-list__vk"><path fill="currentColor" d="M17.6,12c-0.3,0-0.9-0.1-1.5-0.5c-0.5-0.3-0.9-0.7-1.3-1.2c-0.3-0.3-0.9-0.9-1.1-0.9c-0.2,0.1-0.4,0.7-0.3,1.2
 c0,0.1,0,0.6-0.3,0.9c-0.3,0.3-0.8,0.4-0.9,0.4h-1.4c-0.7,0-3.2-0.2-5.4-2.3C2.5,7.1,0.2,2.2,0.1,2C0,1.6-0.1,1.2,0.2,0.9
 s0.8-0.4,1-0.4h3.1c0.1,0,0.4,0.1,0.7,0.3C5.3,1,5.4,1.3,5.5,1.4c0.7,1.5,1.5,2.8,2.6,4C8.2,5,8.3,4,8.2,3.1c0-0.4-0.1-0.8-0.2-1
 C7.9,2,7.7,1.9,7.5,1.9L6.9,1.4c0-0.5,0.5-0.9,0.9-1.1C8.3,0.1,9.1,0,10.1,0h0.5c0.9,0,1.2,0.1,1.6,0.1c1.2,0.3,1.2,1.3,1.1,2.5v1.6
@@ -168,33 +171,32 @@ c-1.4,2.1-2,2.4-2.5,2.4c-0.1,0-0.3,0-0.4-0.1c-0.7-0.4-0.7-1.4-0.7-2.1V3.9V2.6c0.
 c-0.5,0-1,0-1.4,0.1l0.2,0.2c0.4,0.5,0.4,1.5,0.4,1.7c0.1,1.3,0,2.9-0.7,3.3c-0.1,0-0.2,0.1-0.4,0.1C7.5,6.5,6.8,5.8,5.6,4
 C5,2.9,4.5,1.8,4.5,1.8s0-0.1-0.1-0.1S4.2,1.6,4.2,1.6H1.3H1.2c0.4,0.9,2.5,5,4.8,7.2c2,1.9,4.3,2,4.7,2h1.4c0,0,0.2,0,0.2-0.1v-0.1
 c0-0.2,0-2,1.2-2.3C13.5,8.3,13.7,8.3,13.7,8.3z"/>
-                </svg>
-              </a>
-            </li>
-            <li class="socials-list__item">
-              <a class="socials-list__link" target="_blank" href="" aria-label="Инстаграм">
-                <svg class="socials-list__icon socials-list__insta"><path fill="currentColor" d="M11.8,1C13.6,1,15,2.4,15,4.2v7.7c0,1.7-1.4,3.1-3.1,3.1H4.2C2.4,15,1,13.6,1,11.8V4.2C1,2.4,2.4,1,4.2,1H11.8
+              </svg>
+            </a>
+          </li>
+          <li class="socials-list__item">
+            <a class="socials-list__link" target="_blank" href="" aria-label="Инстаграм">
+              <svg class="socials-list__icon socials-list__insta"><path fill="currentColor" d="M11.8,1C13.6,1,15,2.4,15,4.2v7.7c0,1.7-1.4,3.1-3.1,3.1H4.2C2.4,15,1,13.6,1,11.8V4.2C1,2.4,2.4,1,4.2,1H11.8
 M11.8,0H4.2C1.9,0,0,1.9,0,4.2v7.7C0,14.1,1.9,16,4.2,16h7.7c2.3,0,4.2-1.9,4.2-4.2V4.2C16,1.9,14.1,0,11.8,0z"/><path fill="currentColor" d="M8,4.9c1.7,0,3.1,1.4,3.1,3.1S9.7,11.1,8,11.1S4.9,9.7,4.9,8S6.3,4.9,8,4.9 M8,3.9C5.7,3.9,3.9,5.7,3.9,8
 s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9z"/><circle fill="currentColor" cx="12.3" cy="3.7" r="0.9"/></svg>
-              </a>
-            </li>
-            <li class="socials-list__item">
-              <a class="socials-list__link" target="_blank" href="" aria-label="Фэйсбук">
-                <svg class="socials-list__icon socials-list__fb"><path fill="currentColor" d="M7.1,19H2v-8.8H0V5.8h1.9C1.8,3.8,2.1,2.4,3,1.4C3.8,0.5,5,0.1,6.5,0H10v4.2H7.2C7.1,4.4,7,5,7,5.8h3v4.4H7.1V19z M3.1,18
+            </a>
+          </li>
+          <li class="socials-list__item">
+            <a class="socials-list__link" target="_blank" href="" aria-label="Фэйсбук">
+              <svg class="socials-list__icon socials-list__fb"><path fill="currentColor" d="M7.1,19H2v-8.8H0V5.8h1.9C1.8,3.8,2.1,2.4,3,1.4C3.8,0.5,5,0.1,6.5,0H10v4.2H7.2C7.1,4.4,7,5,7,5.8h3v4.4H7.1V19z M3.1,18
 h2.8V9.1h2.9V6.8H5.9V6.3c0-1.4,0-2.6,0.7-3.1l0.1-0.1h2.1V1H6.5c-1.2,0.1-2,0.4-2.6,1c-0.8,0.8-1,2.3-0.8,4.2l0.1,0.6H1.1v2.3h2V18
 z"/></svg>
-              </a>
-            </li>
-          </ul>
-        </section>
-        <p class="page-footer__copyright copyright">
-          <span class="copyright__text">HTML Academy</span>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy" target="_blank">
-            <svg class="copyright__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path fill="currentColor" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
-          </a>
-        </p>
-      </div>
-    </footer>
-  </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <p class="page-footer__copyright copyright">
+        <span class="copyright__text">HTML Academy</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy" target="_blank">
+          <svg class="copyright__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path fill="currentColor" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
+        </a>
+      </p>
+    </div>
+  </footer>
 </body>
 </html>

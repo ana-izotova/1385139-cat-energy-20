@@ -1,5 +1,6 @@
 .main-nav {
   width: auto;
+  padding: 0;
 }
 
 .main-nav__toggle {
@@ -16,6 +17,14 @@
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.main-nav--opened {
+  border-bottom: 1px solid $border_gray-2;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
   }
 }
 

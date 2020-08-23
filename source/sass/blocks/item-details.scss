@@ -5,11 +5,21 @@
   @include font(12px, 14px);
   font-family: $arial;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    @include font(16px, 1);
+    grid-gap: 5px;
+  }
 }
 
 .item-details__inner-wrap {
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $special_gray;
+    padding-bottom: 7px;
+  }
 }
 
 .item-details__title {

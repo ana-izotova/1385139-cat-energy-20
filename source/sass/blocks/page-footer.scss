@@ -1,3 +1,9 @@
+.page-footer {
+  @media (min-width: $tablet-width) {
+    background-color: $basic-gray;
+  }
+}
+
 .page-footer__wrap {
   display: grid;
   background-color: $basic-gray;

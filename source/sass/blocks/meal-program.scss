@@ -44,28 +44,87 @@
   }
 }
 
-.meal-program__icon::before {
-  content: "";
-  position: absolute;
-  top: 21px;
-  left: 22px;
-  width: 50px;
+.meal-program__icon {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 21px;
+    left: 22px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $basic_green;
+
+    @media (min-width: $tablet-width) {
+      top: 92px;
+      left: 446px;
+      width: 200px;
+      height: 200px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 47px;
+      left: 52px;
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+  }
+}
+
+.meal-program__icon--loosing::after {
+  width: 36px;
   height: 50px;
-  border-radius: 50%;
-  background-color: $basic_green;
+  background-image: url("/img/icon-cat-slim.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 18px;
+  left: 29px;
 
   @media (min-width: $tablet-width) {
-    top: 92px;
-    left: 446px;
-    width: 200px;
-    height: 200px;
+    width: 140px;
+    height: 192px;
+    top: 81px;
+    left: auto;
+    right: 92px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 47px;
-    left: 52px;
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 97px;
+    top: 41px;
+    left: 67px;
+    right: auto;
+  }
+}
+
+.meal-program__icon--gaining::after {
+  width: 67px;
+  height: 28px;
+  background-image: url("/img/icon-cat-pro.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 35px;
+  left: 13px;
+
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    height: 112px;
+    top: 135px;
+    left: auto;
+    right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 56px;
+    top: 67px;
+    left: 33px;
+    right: auto;
   }
 }
 
@@ -84,4 +143,11 @@
   @media (min-width: $tablet-width) {
     @include font(20px, 30px);
   }
+  //
+  //&::after {
+  //  content: "";
+  //  width: 32px;
+  //  height: 10px;
+  //  background-image: ;
+  //}
 }
