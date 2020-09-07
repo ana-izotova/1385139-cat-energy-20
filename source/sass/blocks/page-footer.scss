@@ -27,8 +27,8 @@
   justify-content: center;
   margin-bottom: 32px;
 
-  &:hover:not(.page-header__logo--current),
-  &:focus:not(.page-header__logo--current) {
+  &:hover:not(.page-footer__logo--current),
+  &:focus:not(.page-footer__logo--current) {
     opacity: 0.8;
   }
 
