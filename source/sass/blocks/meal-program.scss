@@ -4,11 +4,11 @@
   padding: 30px 33px 18px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 279px 53px 52px;
+    padding: 77px 279px 56px 52px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 77px 51px 55px 52px;
+    padding: 77px 45px 59px 52px;
   }
 }
 
@@ -29,18 +29,26 @@
 
 .meal-program__text {
   font-family: $arial;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
   border-bottom: 1px solid $border_gray-2;
   margin: 0;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
     border-bottom: none;
-    margin-bottom: 48px;
+    margin-bottom: 52px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 23px;
+    margin-bottom: 28px;
+  }
+}
+
+.meal-program__icon--gaining {
+  @media (min-width: $tablet-width) and (max-width: $tablet-width) {
+    .meal-program__text {
+      max-width: 343px;
+    }
   }
 }
 
@@ -48,7 +56,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 21px;
+    top: 25px;
     left: 22px;
     width: 50px;
     height: 50px;
@@ -82,7 +90,7 @@
   background-image: url("/img/icon-cat-slim.svg");
   background-repeat: no-repeat;
   background-position: center;
-  top: 18px;
+  top: 22px;
   left: 29px;
 
   @media (min-width: $tablet-width) {
@@ -114,9 +122,9 @@
   @media (min-width: $tablet-width) {
     width: 268px;
     height: 112px;
-    top: 135px;
+    top: 136px;
     left: auto;
-    right: 30px;
+    right: 28px;
   }
 
   @media (min-width: $desktop-width) {
@@ -129,25 +137,56 @@
 }
 
 .meal-program__link {
-  display: block;
+  display: inline-flex;
+  position: relative;
 
   @include font(16px, 16px);
   @include uppercase;
   color: $black;
   margin-top: 19px;
+  padding-right: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    padding-right: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 40px;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include font(20px, 30px);
+    padding-right: 35px;
+  }
+
+  &::before {
+    content: "";
+    width: 32px;
+    height: 10px;
+    background-image: url("/img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    right: -19px;
+    align-self: center;
+
+    @media (min-width: $tablet-width) {
+      right: -20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: -28px;
+    }
+  }
 
   &:active {
     opacity: 0.3;
   }
 
-  @media (min-width: $tablet-width) {
-    @include font(20px, 30px);
+  &:hover,
+  &:focus {
+    &::before {
+      background-image: url("/img/icon-right-arrow-verylong.svg");
+    }
   }
-  //
-  //&::after {
-  //  content: "";
-  //  width: 32px;
-  //  height: 10px;
-  //  background-image: ;
-  //}
 }

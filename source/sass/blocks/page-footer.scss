@@ -1,26 +1,24 @@
 .page-footer {
-  @media (min-width: $tablet-width) {
-    background-color: $basic-gray;
-  }
+  background-color: $basic-gray;
 }
 
 .page-footer__wrap {
   display: grid;
   background-color: $basic-gray;
   padding-top: 39px;
-  padding-bottom: 22px;
+  padding-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     justify-content: space-between;
-    padding-top: 55px;
-    padding-bottom: 61px;
+    padding-top: 49px;
+    padding-bottom: 49px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 57px;
-    padding-bottom: 58px;
+    padding-top: 51px;
+    padding-bottom: 51px;
   }
 }
 
@@ -29,12 +27,12 @@
   justify-content: center;
   margin-bottom: 32px;
 
-  &:hover,
-  &:focus {
+  &:hover:not(.page-header__logo--current),
+  &:focus:not(.page-header__logo--current) {
     opacity: 0.8;
   }
 
-  &:active {
+  &:active:not(.page-header__logo--current) {
     opacity: 0.6;
   }
 
@@ -47,9 +45,9 @@
 .page-footer__socials {
   border-top: 1px solid $border_gray-2;
   border-bottom: 1px solid $border_gray-2;
-  margin-bottom: 22px;
+  margin-bottom: 18px;
   padding-top: 20px;
-  padding-bottom: 21px;
+  padding-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     border: none;

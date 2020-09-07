@@ -8,7 +8,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 45px;
+    padding-top: 42px;
     padding-bottom: 82px;
   }
 }
@@ -18,11 +18,7 @@
   margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 54px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-bottom: 56px;
+    margin-bottom: 53px;
   }
 }
 
@@ -31,12 +27,12 @@
   @include uppercase;
   color: $black;
   margin: 0;
-  margin-bottom: 39px;
+  margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     @include font(20px, 30px);
     margin-left: 40px;
-    margin-bottom: 66px;
+    margin-bottom: 65px;
   }
 
   @media (min-width: $desktop-width) {

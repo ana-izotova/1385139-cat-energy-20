@@ -7,18 +7,37 @@
 
 .socials-list__item:first-child {
   margin-right: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 47px;
+    margin-right: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 133px;
+  }
 }
 
 .socials-list__item:nth-child(2) {
   margin-right: 33px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 25px;
+  }
 }
 
-.socials-list__link {
-  color: $special_gray-3;
+.socials-list__item:last-child {
+  @media (min-width: $tablet-width) {
+    margin-right: auto;
+  }
+}
+
+.socials-list__icon {
+  fill: $special_gray-3;
 
   &:hover,
   &:focus {
-    color: $basic_green;
+    fill: $basic_green;
   }
 
   &:active {
@@ -29,14 +48,29 @@
 .socials-list__vk {
   width: 23px;
   height: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 22px;
+  }
 }
 
 .socials-list__insta {
   width: 16px;
   height: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 23px;
+  }
 }
 
 .socials-list__fb {
   width: 22px;
   height: 22px;
+
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 29px;
+  }
 }

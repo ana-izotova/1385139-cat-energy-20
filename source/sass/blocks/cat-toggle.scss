@@ -1,6 +1,10 @@
 .cat-toggles {
   display: flex;
   align-items: center;
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-end;
+  }
 }
 
 .cat-toggles__button {
@@ -16,12 +20,8 @@
   padding: 0;
   cursor: pointer;
 
-  &:first-child {
-    margin-right: 2px;
-  }
-
   &:last-child {
-    margin-left: 2px;
+    padding-left: 6px;
   }
 
   @media (min-width: $tablet-width) {
@@ -33,11 +33,12 @@
     text-underline-position: under;
 
     &:first-child {
-      margin-right: 20px;
+      //margin-right: 9px;
     }
 
     &:last-child {
-      margin-left: 20px;
+      padding-left: 0;
+      //margin-left: 5px;
     }
 
     &:hover,
@@ -70,6 +71,8 @@
     border: none;
     display: flex;
     justify-content: center;
+    margin-left: 14px;
+    margin-right: 10px;
   }
 }
 
