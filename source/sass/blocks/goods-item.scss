@@ -1,32 +1,118 @@
 .goods-item {
-  border-top: 1px solid $special_gray-2;
-  padding-top: 19px;
-  padding-bottom: 25px;
-}
-
-.goods-item__wrap {
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    align-items: center;
+    background-color: $basic_gray;
+    padding: 0;
+    padding-bottom: 39px;
+  }
 }
 
-.goods-item__image-wrapper {
-  width: 50%;
+.goods-item__image-link {
+  margin-top: -20px;
+
+  .goods-item--big & {
+    margin-top: -15px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: flex-end;
+    margin-top: -44px;
+    margin-bottom: 29px;
+
+    .goods-item--big & {
+      margin-top: -70px;
+      margin-bottom: 18px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -50px;
+    margin-bottom: 40px;
+
+    .goods-item--big & {
+      margin-top: -80px;
+      margin-bottom: 35px;
+    }
+  }
+}
+
+.goods-item__image {
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
 }
 
 .goods-item__link {
-  display: inline-flex;
+  display: flex;
+  margin-right: 60px;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: center;
+    margin-right: 0;
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 25px;
+  }
+}
+
+.goods-item__header {
+  @include font(16px, 20px);
+  @include uppercase;
+  color: $black;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include font(20px, 24px);
+    text-align: center;
+
+    br {
+      display: inline;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 21px;
+  }
 }
 
 .goods-item__info {
   width: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin-bottom: 33px;
+  }
 }
 
 .goods-item__order-button {
-  margin-top: 13px;
   width: 100%;
-}
+  margin-top: -3px;
 
-.goods-item__header {
-  margin-right: 60px;
-  margin-bottom: 18px;
+  .goods-item--big & {
+    margin-top: -8px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 248px;
+    margin-top: auto;
+
+    .goods-item--big & {
+      margin-top: auto;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 168px;
+  }
 }

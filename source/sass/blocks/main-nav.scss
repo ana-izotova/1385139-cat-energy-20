@@ -1,18 +1,24 @@
 .main-nav {
   width: auto;
+  padding: 0;
 }
 
 .main-nav__toggle {
   display: block;
   position: absolute;
-  top: 20px;
-  right: 23px;
+  top: 22px;
+  left: 50%;
+  transform: translateX(116px);
   width: 24px;
   height: 24px;
   cursor: pointer;
   border: none;
   background-color: transparent;
   padding: 0;
+
+  .page-header--form & {
+    top: 15px;
+  }
 
   @media (min-width: $tablet-width) {
     display: none;

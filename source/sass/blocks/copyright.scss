@@ -4,28 +4,42 @@
   align-items: center;
   color: $special_dark-gray;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+  }
 }
 
 .copyright__text {
   @include font(16px, 18px);
   font-family: $arial;
+  margin-bottom: 7px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 18px;
+    margin-bottom: 5;
+  }
 }
 
 .copyright__link {
-  color: $special_gray-3;
-
-  &:hover,
-  &:focus {
-    color: $basic_green;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
+  display: block;
+  cursor: pointer;
 }
 
 .copyright__logo {
-  width: 27px;
-  height: 34px;
-  line-height: 34px;
+  fill: $special-gray-3;
+  width: 42px;
+  height: 42px;
+  margin-right: -8px;
+
+  @media (min-width: $tablet-width) {
+    &:hover,
+    &:focus {
+      fill: $basic_green;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }

@@ -2,57 +2,191 @@
   position: relative;
   background-color: $basic-gray;
   padding: 30px 33px 18px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 279px 56px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 77px 45px 59px 52px;
+  }
 }
 
 .meal-program__header {
   padding-left: 71px;
   margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 162px;
+    margin-bottom: 73px;
+  }
 }
 
 .meal-program__text {
   font-family: $arial;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
   border-bottom: 1px solid $border_gray-2;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+    border-bottom: none;
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 28px;
+  }
 }
 
-.meal-program__icon-loosing::before {
-  content: "";
-  position: absolute;
-  top: 21px;
-  left: 22px;
-  width: 50px;
-  height: 53px;
-  //background-image: url("http://placekitten.com/g/50/53");
-  //background-position: top center;
-  //background-repeat: no-repeat;
-  background-color: #68b738;
-  border: 1px solid black;
+.meal-program__icon--gaining {
+  @media (min-width: $tablet-width) and (max-width: $tablet-width) {
+    .meal-program__text {
+      max-width: 343px;
+    }
+  }
 }
 
-.meal-program__icon-gaining::before {
-  content: "";
-  position: absolute;
-  top: 24px;
-  left: 13px;
-  width: 67px;
+.meal-program__icon {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 22px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $basic_green;
+
+    @media (min-width: $tablet-width) {
+      top: 92px;
+      left: 446px;
+      width: 200px;
+      height: 200px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 47px;
+      left: 52px;
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+  }
+}
+
+.meal-program__icon--loosing::after {
+  width: 36px;
   height: 50px;
-  //background-image: url("http://placekitten.com/g/67/50");
-  //background-position: top center;
-  //background-repeat: no-repeat;
-  background-color: #68b738;
-  border: 1px solid black;
+  background-image: url("/img/icon-cat-slim.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 22px;
+  left: 29px;
+
+  @media (min-width: $tablet-width) {
+    width: 140px;
+    height: 192px;
+    top: 81px;
+    left: auto;
+    right: 92px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+    height: 97px;
+    top: 41px;
+    left: 67px;
+    right: auto;
+  }
+}
+
+.meal-program__icon--gaining::after {
+  width: 67px;
+  height: 28px;
+  background-image: url("/img/icon-cat-pro.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 35px;
+  left: 13px;
+
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    height: 112px;
+    top: 136px;
+    left: auto;
+    right: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 56px;
+    top: 67px;
+    left: 33px;
+    right: auto;
+  }
 }
 
 .meal-program__link {
-  display: block;
+  display: inline-flex;
+  position: relative;
 
   @include font(16px, 16px);
   @include uppercase;
   color: $black;
   margin-top: 19px;
+  padding-right: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    padding-right: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 40px;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include font(20px, 30px);
+    padding-right: 35px;
+  }
+
+  &::before {
+    content: "";
+    width: 32px;
+    height: 10px;
+    background-image: url("/img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    right: -19px;
+    align-self: center;
+
+    @media (min-width: $tablet-width) {
+      right: -20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: -28px;
+    }
+  }
 
   &:active {
     opacity: 0.3;
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      background-image: url("/img/icon-right-arrow-verylong.svg");
+    }
   }
 }

@@ -1,7 +1,25 @@
+.page-footer {
+  background-color: $basic-gray;
+}
+
 .page-footer__wrap {
+  display: grid;
   background-color: $basic-gray;
   padding-top: 39px;
-  padding-bottom: 22px;
+  padding-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 49px;
+    padding-bottom: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 51px;
+    padding-bottom: 51px;
+  }
 }
 
 .page-footer__logo {
@@ -9,16 +27,31 @@
   justify-content: center;
   margin-bottom: 32px;
 
-  &:hover,
-  &:focus {
+  &:hover:not(.page-footer__logo--current),
+  &:focus:not(.page-footer__logo--current) {
     opacity: 0.8;
   }
 
-  &:active {
+  &:active:not(.page-header__logo--current) {
     opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
+    justify-content: start;
+    margin: 0;
   }
 }
 
 .page-footer__socials {
-  margin-bottom: 22px;
+  border-top: 1px solid $border_gray-2;
+  border-bottom: 1px solid $border_gray-2;
+  margin-bottom: 18px;
+  padding-top: 20px;
+  padding-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
 }

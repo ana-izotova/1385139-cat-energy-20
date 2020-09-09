@@ -1,19 +1,131 @@
+.contacts {
+  position: relative;
+  background-color: $white;
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic_gray;
+  }
+}
+
 .contacts__main-wrap {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding-top: 28px;
-  padding-bottom: 22px;
+  padding-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding: 61px 72px 59px 71px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    max-width: 570px;
+    top: 93px;
+    right: 50%;
+    transform: translateX(-40px);
+    background: $white;
+    padding: 66px 89px 60px 76px;
+    z-index: 4;
+  }
+}
+
+.contacts__header {
+  max-width: 170px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    @include font(20px, 24px);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 5px;
+    margin-right: 85px;
+  }
 }
 
 .contacts__address {
   font-family: $arial;
   line-height: 20px;
   font-style: normal;
+  padding-left: 18px;
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+    max-width: 160px;
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.contacts__city {
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-top: 20px;
+  }
 }
 
 .contacts__map {
   display: block;
+  width: 100%;
+  height: 362px;
+  position: relative;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
 
 .contacts--gray-bcg {
   background-color: $basic-gray;
+}
+
+.contacts__inner {
+  padding: 0;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 53px;
+    height: 53px;
+    position: absolute;
+    top: 170px;
+    left: 50%;
+    transform: translateX(-55px);
+    background-image: url("/img/map-pin.png");
+    background-repeat: no-repeat;
+    background-size: 53px auto;
+    z-index: 2;
+
+    @media (min-width: $tablet-width) {
+      width: 106px;
+      height: 106px;
+      background-size: 106px auto;
+      transform: translateX(-90px);
+    }
+
+    @media (min-width: $desktop-width) {
+      transform: translateX(250px);
+    }
+  }
+}
+
+.contacts__interactive-map {
+  position: absolute;
+  width: 100%;
+  top: 115px;
+  z-index: 3;
+
+  @media (min-width: $tablet-width) {
+    top: 201px;
+    height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+  }
 }

@@ -2,6 +2,36 @@
   border-top: 1px solid $special_gray-2;
   border-bottom: 1px solid $special_gray-2;
   position: relative;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    border: 2px solid $basic_gray;
+    padding: 52px 38px 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+
+  &::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 26px;
+    left: 50%;
+    transform: translateX(-15px);
+    background-image: url("/img/icon-plus-mobile.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 60px;
+      height: 60px;
+      top: 52px;
+      transform: translateX(-30px);
+      background-image: url("/img/icon-plus.svg");
+    }
+  }
 }
 
 .more-goods__wrap {
@@ -9,35 +39,36 @@
   flex-direction: column;
   align-items: center;
   padding-top: 26px;
-  padding-bottom: 25px;
-}
 
-.more-goods__sign {
-  position: relative;
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 41px; //Не получилось только паддингом отжать вниз
-    left: 50%;
-    width: 25px;
-    height: 1.5px;
-    background-color: #d3d3d3;
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    padding: 0 30px;
   }
 
-  &::before {
-    transform: translateX(-50%) rotate(90deg);
-  }
-
-  &::after {
-    transform: translateX(-50%) rotate(180deg);
+  @media (min-width: $desktop-width) {
+    padding-left: 35px;
+    padding-right: 35px;
   }
 }
 
 .more-goods__header {
-  margin-top: 53px;
-  margin-bottom: 8px;
+  @include font(16px, 22px);
+  @include uppercase;
+  color: $black;
+  margin-top: 51px;
+  margin-bottom: 7px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    padding: 0 20px;
+    margin-top: 107px;
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin-top: 160px;
+  }
 }
 
 .more-goods__text {
@@ -46,4 +77,25 @@
   @include font(12px, 16px);
   margin: 0;
   margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    font-size: inherit;
+    line-height: 18px;
+    margin-bottom: 87px;
+  }
+}
+
+.more-goods__show-button {
+  width: 100%;
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

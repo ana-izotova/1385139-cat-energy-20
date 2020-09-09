@@ -1,11 +1,25 @@
 .program-select {
   padding-top: 27px;
   padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 3px;
+    padding-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 42px;
+    padding-bottom: 82px;
+  }
 }
 
 .program-select__header {
   color: $black;
   margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 53px;
+  }
 }
 
 .program-select__text {
@@ -13,5 +27,15 @@
   @include uppercase;
   color: $black;
   margin: 0;
-  margin-bottom: 39px;
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    @include font(20px, 30px);
+    margin-left: 40px;
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
 }

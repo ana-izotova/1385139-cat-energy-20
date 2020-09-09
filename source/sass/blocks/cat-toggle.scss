@@ -1,9 +1,13 @@
-.cat-toggle {
+.cat-toggles {
   display: flex;
   align-items: center;
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-end;
+  }
 }
 
-.cat-toggle__button {
+.cat-toggles__button {
   width: 70px;
   height: 40px;
   font-family: inherit;
@@ -15,17 +19,41 @@
   border: none;
   padding: 0;
   cursor: pointer;
+
+  &:last-child {
+    padding-left: 6px;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include font(20px, 30px);
+    position: relative;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: rgba(0, 0, 0, 0.3);
+    text-underline-position: under;
+
+    &:first-child {
+      //margin-right: 9px;
+    }
+
+    &:last-child {
+      padding-left: 0;
+      //margin-left: 5px;
+    }
+
+    &:hover,
+    &:focus {
+      text-decoration-style: solid;
+      text-decoration-color: rgba(0, 0, 0, 0.4);
+    }
+
+    &:active {
+      text-decoration: none;
+    }
+  }
 }
 
-.cat-toggle__button:first-child {
-  margin-right: 2px;
-}
-
-.cat-toggle__button:last-child {
-  margin-left: 2px;
-}
-
-.cat-toggle__bar {
+.cat-toggles__bar {
   width: 84px;
   height: 14px;
   background-color: $white;
@@ -35,12 +63,54 @@
   align-items: center;
   padding: 4px 5px;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 428px;
+    height: 6px;
+    background-color: #dcdcdc;
+    border: none;
+    display: flex;
+    justify-content: center;
+    margin-left: 14px;
+    margin-right: 10px;
+  }
 }
 
-.cat-toggle__active-bar {
+.cat-toggles__active-bar {
   width: 35px;
   height: 6px;
   background-color: $basic_green;
   border-radius: 6px;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 34px;
+    height: 34px;
+    background-color: $white;
+    border-radius: 50%;
+    border: 1px solid $special_gray;
+    box-shadow: $shadow-normal;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background-color: $basic_green;
+      border-radius: 50%;
+      position: absolute;
+      top: 12px;
+      left: 12px;
+    }
+
+    &:hover,
+    &:focus {
+      box-shadow: $shadow-hover;
+    }
+
+    &:active {
+      box-shadow: $shadow-pressed;
+      border-color: $basic_green;
+    }
+  }
 }
