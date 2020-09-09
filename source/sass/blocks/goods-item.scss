@@ -91,6 +91,7 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    margin-bottom: 33px;
   }
 }
 
@@ -104,10 +105,10 @@
 
   @media (min-width: $tablet-width) {
     width: 248px;
-    margin-top: 33px;
+    margin-top: auto;
 
     .goods-item--big & {
-      margin-top: 33px;
+      margin-top: auto;
     }
   }
 

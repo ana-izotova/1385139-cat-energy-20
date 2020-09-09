@@ -1,6 +1,10 @@
 .contacts {
   position: relative;
   background-color: $white;
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic_gray;
+  }
 }
 
 .contacts__main-wrap {
@@ -113,7 +117,7 @@
 .contacts__interactive-map {
   position: absolute;
   width: 100%;
-  top: 114px;
+  top: 115px;
   z-index: 3;
 
   @media (min-width: $tablet-width) {

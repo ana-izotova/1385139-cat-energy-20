@@ -4,8 +4,8 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Каталог товаров "Кэт энерджи"</title>
-  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
-  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.min.css">
 </head>
 <body class="page__body">
@@ -269,83 +269,86 @@
             <div class="more-goods__wrap more-goods__sign">
               <h2 class="more-goods__header heading">Показать еще 100500 товаров</h2>
               <p class="more-goods__text">На самом деле вкусов гораздо больше!</p>
-              <a class="more-goods__show-button button button--show-more" href="more-goods.html">Показать все</a>
             </div>
+            <a class="more-goods__show-button button button--show-more" href="more-goods.html">Показать все</a>
           </div>
         </div>
       </div>
     </section>
     <section class="page-main__additional additional-goods">
-      <h2 class="additional-goods__heading heading heading--additional">
-        <span class="heading heading--additional-text">
-          Дополнительные товары
-        </span>
-      </h2>
-      <div class="container additional-goods__inner">
-        <ul class="additional-goods__list add-goods-list">
-          <li class="add-goods-list__item">
-            <div class="add-goods-list__info">
-              <a class="add-goods-list__link" href="catalog-item.html">
-                <h3 class="add-goods-list__header heading">Сахарозаменитель</h3>
-              </a>
-              <dl class="add-goods-list__details item-details">
-                <div class="item-details__inner-wrap">
-                  <dt class="item-details__title">1 упаковка (100 г)</dt>
-                  <dd class="item-details__data">200 Р.</dd>
-                </div>
-              </dl>
-            </div>
-            <a class="add-goods-list__order-button button" href="modal.html">Заказать</a>
-          </li>
-          <li class="add-goods-list__item">
-            <div class="add-goods-list__info">
-              <a class="add-goods-list__link" href="catalog-item.html">
-                <h3 class="add-goods-list__header heading heading--add-item">Питьевая вода</h3>
-              </a>
-              <dl class="add-goods-list__details item-details">
-                <div class="item-details__inner-wrap">
-                  <dt class="item-details__title">5 литров</dt>
-                  <dd class="item-details__data">50 Р.</dd>
-                </div>
-              </dl>
-            </div>
-            <a class="add-goods-list__order-button button" href="modal.html">Заказать</a>
-          </li>
-          <li class="add-goods-list__item">
-            <div class="add-goods-list__info">
-              <a class="add-goods-list__link" href="catalog-item.html">
-                <h3 class="add-goods-list__header heading heading--add-item">Молоко</h3>
-              </a>
-              <dl class="add-goods-list__details item-details">
-                <div class="item-details__inner-wrap">
-                  <dt class="item-details__title">1 литр</dt>
-                  <dd class="item-details__data">100 Р.</dd>
-                </div>
-              </dl>
-            </div>
-            <a class="add-goods-list__order-button button" href="modal.html">Заказать</a>
-          </li>
-          <li class="add-goods-list__item">
-            <div class="add-goods-list__info">
-              <a class="add-goods-list__link" href="catalog-item.html">
-                <h3 class="add-goods-list__header heading heading--add-item">Витамины</h3>
-              </a>
-              <dl class="add-goods-list__details item-details">
-                <div class="item-details__inner-wrap">
-                  <dt class="item-details__title">1 упаковка (30 г)</dt>
-                  <dd class="item-details__data">300 Р.</dd>
-                </div>
-              </dl>
-            </div>
-            <a class="add-goods-list__order-button button" href="modal.html">Заказать</a>
-          </li>
-        </ul>
-        <div class="additional-goods__promo-offer">
-          <p class="additional-goods__promo-offer-text">
-            Закажите все и&nbsp;получите чехол для кота в подарок!
-          </p>
+      <div class="container">
+        <h2 class="additional-goods__heading heading heading--additional">
+          <span class="heading heading--additional-text">
+            Дополнительные товары
+          </span>
+        </h2>
+        <div class="additional-goods__inner">
+          <ul class="additional-goods__list add-goods-list">
+            <li class="add-goods-list__item">
+              <div class="add-goods-list__info">
+                <a class="add-goods-list__link" href="catalog-item.html">
+                  <h3 class="add-goods-list__header heading">Сахарозаменитель</h3>
+                </a>
+                <dl class="add-goods-list__details item-details">
+                  <div class="item-details__inner-wrap">
+                    <dt class="item-details__title">1 упаковка (100 г)</dt>
+                    <dd class="item-details__data">200 Р.</dd>
+                  </div>
+                </dl>
+              </div>
+              <a class="add-goods-list__order-button button" href="modal.html">Заказать</a>
+            </li>
+            <li class="add-goods-list__item">
+              <div class="add-goods-list__info">
+                <a class="add-goods-list__link" href="catalog-item.html">
+                  <h3 class="add-goods-list__header heading heading--add-item">Питьевая вода</h3>
+                </a>
+                <dl class="add-goods-list__details item-details">
+                  <div class="item-details__inner-wrap">
+                    <dt class="item-details__title">5 литров</dt>
+                    <dd class="item-details__data">50 Р.</dd>
+                  </div>
+                </dl>
+              </div>
+              <a class="add-goods-list__order-button button" href="modal.html">Заказать</a>
+            </li>
+            <li class="add-goods-list__item">
+              <div class="add-goods-list__info">
+                <a class="add-goods-list__link" href="catalog-item.html">
+                  <h3 class="add-goods-list__header heading heading--add-item">Молоко</h3>
+                </a>
+                <dl class="add-goods-list__details item-details">
+                  <div class="item-details__inner-wrap">
+                    <dt class="item-details__title">1 литр</dt>
+                    <dd class="item-details__data">100 Р.</dd>
+                  </div>
+                </dl>
+              </div>
+              <a class="add-goods-list__order-button button" href="modal.html">Заказать</a>
+            </li>
+            <li class="add-goods-list__item">
+              <div class="add-goods-list__info">
+                <a class="add-goods-list__link" href="catalog-item.html">
+                  <h3 class="add-goods-list__header heading heading--add-item">Витамины</h3>
+                </a>
+                <dl class="add-goods-list__details item-details">
+                  <div class="item-details__inner-wrap">
+                    <dt class="item-details__title">1 упаковка (30 г)</dt>
+                    <dd class="item-details__data">300 Р.</dd>
+                  </div>
+                </dl>
+              </div>
+              <a class="add-goods-list__order-button button" href="modal.html">Заказать</a>
+            </li>
+          </ul>
+          <div class="additional-goods__promo-offer">
+            <p class="additional-goods__promo-offer-text">
+              Закажите все и&nbsp;получите чехол для кота в подарок!
+            </p>
+          </div>
         </div>
       </div>
+
     </section>
   </main>
   <footer class="page-footer">

@@ -101,6 +101,8 @@
 
   &::after {
     @media (min-width: $tablet-width) {
+      content: attr(data-number);
+
       @include font(280px, 1);
       font-family: $oswald;
       color: $basic_gray;
@@ -124,7 +126,6 @@
 
   &::after {
     @media (min-width: $tablet-width) {
-      content: "1";
       right: 20px;
     }
   }
@@ -139,12 +140,6 @@
       background-size: 50px 50px;
     }
   }
-
-  &::after {
-    @media (min-width: $tablet-width) {
-      content: "2";
-    }
-  }
 }
 
 .how-it-works__icon--easy {
@@ -156,12 +151,6 @@
       background-size: 50px 50px;
     }
   }
-
-  &::after {
-    @media (min-width: $tablet-width) {
-      content: "3";
-    }
-  }
 }
 
 .how-it-works__icon--result {
@@ -171,12 +160,6 @@
     @media (min-resolution: 2dppx) {
       background-image: url("/img/advantage-clock@2x.png");
       background-size: 50px 50px;
-    }
-  }
-
-  &::after {
-    @media (min-width: $tablet-width) {
-      content: "4";
     }
   }
 }

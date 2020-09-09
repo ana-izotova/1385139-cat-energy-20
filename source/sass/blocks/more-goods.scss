@@ -39,7 +39,6 @@
   flex-direction: column;
   align-items: center;
   padding-top: 26px;
-  padding-bottom: 24px;
 
   @media (min-width: $tablet-width) {
     text-align: center;
@@ -88,8 +87,15 @@
 
 .more-goods__show-button {
   width: 100%;
+  margin-bottom: 24px;
 
-  //@media (min-width: $desktop-width) {
-  //  width: 249px;
-  //}
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

@@ -1,4 +1,5 @@
 .additional-goods {
+  position: relative;
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
@@ -11,17 +12,19 @@
 }
 
 .additional-goods__heading {
-  display: flex;
-  margin-top: 29px;
+  @include font(24px, 1);
+  margin-left: -20px;
   margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 68px;
+    font-size: 36px;
     margin-bottom: 77px;
+    margin-left: 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 76px;
+    margin-top: 0;
+    margin-left: -35px;
   }
 }
 

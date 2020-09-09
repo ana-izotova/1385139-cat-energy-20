@@ -146,12 +146,6 @@
   }
 }
 
-.search-form__contacts .heading--additional::before {
-  @media (max-width: $mobile-width-only) {
-    top: 30%;
-  }
-}
-
 .search-form__header {
   @include font(24px, 26px);
   color: $black;
@@ -164,6 +158,7 @@
 
 .search-form__contacts {
   margin-bottom: 27px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 65px;
@@ -267,7 +262,14 @@
 }
 
 .search-form__comment {
+  position: relative;
   margin-bottom: 27px;
+
+  .search-form__heading {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 75px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 61px;
@@ -275,12 +277,6 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 64px;
-  }
-
-  .search-form__heading {
-    @media (min-width: $tablet-width) {
-      margin-bottom: 75px;
-    }
   }
 
   .container {
@@ -327,15 +323,7 @@
 
 .search-form__additional {
   color: $black;
-  padding-bottom: 34px;
-
-  @media (min-width: $tablet-width) {
-    padding-bottom: 54px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-bottom: 61px;
-  }
+  position: relative;
 
   .search-form__heading {
     @media (min-width: $tablet-width) {
@@ -344,14 +332,18 @@
   }
 
   .container {
+    padding-bottom: 34px;
+
     @media (min-width: $tablet-width) {
       padding-left: 70px;
       padding-right: 65px;
+      padding-bottom: 54px;
     }
 
     @media (min-width: $desktop-width) {
       padding-left: 110px;
       padding-right: 110px;
+      padding-bottom: 61px;
     }
   }
 
@@ -388,6 +380,7 @@
   font-family: inherit;
   border: none;
   margin-bottom: 21px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

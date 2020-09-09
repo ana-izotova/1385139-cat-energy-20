@@ -4,8 +4,8 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Подбор программы питания "Кэт энерджи"</title>
-  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
-  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.min.css">
 </head>
 <body class="page__body">
@@ -46,7 +46,7 @@
         </p>
       </div>
       <form class="program-select__form search-form" action="https://echo.htmlacademy.ru" method="get">
-        <div class="search-form__first-block form-group container">
+        <div class="search-form__first-block container">
           <div class="search-form__basic-info search-form__wrap">
             <p class="search-form__field">
               <label class="search-form__label" for="input-name">Имя:*</label>
@@ -76,36 +76,38 @@
             </p>
           </div>
         </div>
-        <div class="search-form__contacts form-group">
-          <b class="search-form__heading heading heading--additional">
-            <span class="search-form__header heading heading--additional-text">Контактные данные (владельца кота)</span>
-          </b>
-          <div class="container search-form__wrap">
-            <label class="search-form__label search-form__label--email" for="input-email">E&#8209;mail:*
-              <input class="search-form__text-input" type="email" name="email" id="input-email" pattern="^\S{1,}@\S{2,}\.\S{2,}$" placeholder="kuklachev@gmail.com" required>
-            </label>
-            <label class="search-form__label search-form__label--tel" for="input-tel">Телефон:*
-              <input class="search-form__text-input" type="tel" name="tel" id="input-tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" placeholder="8 (960) 900-60-90" required>
-            </label>
+        <div class="search-form__contacts">
+          <div class="container">
+            <b class="search-form__heading heading heading--additional">
+              <span class="search-form__header heading heading--additional-text">Контактные данные (владельца кота)</span>
+            </b>
+            <div class="search-form__wrap">
+              <label class="search-form__label search-form__label--email" for="input-email">E&#8209;mail:*
+                <input class="search-form__text-input" type="email" name="email" id="input-email" pattern="^\S{1,}@\S{2,}\.\S{2,}$" placeholder="kuklachev@gmail.com" required>
+              </label>
+              <label class="search-form__label search-form__label--tel" for="input-tel">Телефон:*
+                <input class="search-form__text-input" type="tel" name="tel" id="input-tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" placeholder="8 (960) 900-60-90" required>
+              </label>
+            </div>
           </div>
         </div>
-        <div class="search-form__comment form-group">
-          <b class="search-form__heading heading heading--additional">
-            <span class="search-form__header heading heading--additional-text">Комментарий</span>
-          </b>
+        <div class="search-form__comment">
           <div class="container">
+            <b class="search-form__heading heading heading--additional">
+              <span class="search-form__header heading heading--additional-text">Комментарий</span>
+            </b>
             <label for="comment" aria-label="Оставьте ваш комментарий">
               <textarea class="search-form__textarea" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
             </label>
           </div>
         </div>
-        <div class="search-form__additional form-group">
-          <b class="search-form__heading heading heading--additional">
-            <span class="search-form__header heading heading--additional-text">
-              Дополнительно
-            </span>
-          </b>
+        <div class="search-form__additional">
           <div class="container">
+            <b class="search-form__heading heading heading--additional">
+              <span class="search-form__header heading heading--additional-text">
+                Дополнительно
+              </span>
+            </b>
             <div class="search-form__wrap">
               <p class="search-form__field">
                 <input class="search-form__checkbox visually-hidden" type="checkbox" name="sugar-subs" id="checkbox-sugar-subs" checked>
