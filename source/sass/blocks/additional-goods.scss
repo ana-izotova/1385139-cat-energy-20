@@ -1,6 +1,6 @@
 .additional-goods {
   position: relative;
-  margin-bottom: 35px;
+  margin-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 76px;
@@ -14,11 +14,11 @@
 .additional-goods__heading {
   @include font(24px, 1);
   margin-left: -20px;
-  margin-bottom: 32px;
+  margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
-    margin-bottom: 77px;
+    margin-bottom: 80px;
     margin-left: 0;
   }
 
@@ -55,7 +55,7 @@
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  margin-top: 37px;
+  margin-top: 41px;
   padding-top: 186px;
   padding-left: 58px;
   padding-right: 61px;

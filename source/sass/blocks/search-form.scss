@@ -15,7 +15,7 @@
     grid-column-gap: 80px;
     padding-left: 111px;
     padding-right: 112px;
-    margin-bottom: 66px;
+    margin-bottom: 68px;
   }
 }
 
@@ -121,11 +121,12 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 16px 21px 17px;
+    @include font(20px, 30px);
+    padding: 9px 20px 12px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 17px 21px 17px;
+    padding: 9px 21px 11px;
   }
 }
 
@@ -244,6 +245,10 @@
       right: 13px;
       background-image: url("/img/icon-phone.svg");
       background-repeat: no-repeat;
+
+      path {
+        fill: tomato;
+      }
 
       @media (min-width: $tablet-width) {
         top: 16px;

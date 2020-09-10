@@ -5,6 +5,12 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 610px;
   }
 }
 
@@ -24,6 +30,12 @@
     border-top: none;
     padding: 0;
 
+    &:not(:last-child) {
+      margin-right: 37px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
     &:not(:last-child) {
       margin-right: 35px;
     }
@@ -46,12 +58,12 @@
   }
 
   @media (min-width: $tablet-width) {
-    @include font(18px, 1);
+    @include font(18px, 24px);
     font-weight: normal;
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 20px;
+    @include font(20px, 30px);
   }
 }
 

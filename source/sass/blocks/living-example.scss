@@ -5,8 +5,8 @@
   padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 43px;
-    padding-bottom: 5px;
+    padding-top: 45px;
+    padding-bottom: 0;
 
     &::after {
       content: "";
@@ -60,11 +60,13 @@
 }
 
 .living-example__header {
-  margin-bottom: 35px;
+  line-height: 40px;
+  margin-bottom: 31px;
   color: $black;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 64px;
+    line-height: 1;
+    margin-bottom: 63px;
   }
 
   @media (min-width: $desktop-width) {

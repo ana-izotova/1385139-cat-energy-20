@@ -21,7 +21,7 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     max-width: 570px;
-    top: 93px;
+    top: 95px;
     right: 50%;
     transform: translateX(-40px);
     background: $white;
@@ -32,14 +32,12 @@
 
 .contacts__header {
   max-width: 170px;
-  line-height: 20px;
 
   @media (min-width: $tablet-width) {
-    @include font(20px, 24px);
+    @include font(20px, 21px);
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 5px;
     margin-right: 85px;
   }
 }
