@@ -15,6 +15,7 @@ const posthtml = require('gulp-posthtml');
 const include = require('posthtml-include');
 const htmlmin = require('gulp-htmlmin');
 const jsmin = require('gulp-jsmin');
+const cssbeautify = require('gulp-cssbeautify');
 
 // Styles
 
@@ -26,6 +27,10 @@ const styles = () => {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(cssbeautify({
+      indent: '  '
+    }))
+    .pipe(gulp.dest('build/css'))
     .pipe(csso())
     .pipe(rename('styles.min.css'))
     .pipe(sourcemap.write('.'))
@@ -85,7 +90,7 @@ exports.webp = createWebp;
 // Sprite
 
 const sprite = () => {
-  return gulp.src('source/img/**/icon-*.svg')
+  return gulp.src('source/img/icons/*.svg')
     .pipe(svgstore())
     .pipe(rename('sprite.svg'))
     .pipe(gulp.dest('build/img'))
@@ -133,6 +138,7 @@ exports.html = html;
 
 const js = () => {
   return gulp.src('source/js/*.js')
+    .pipe(gulp.dest('build/js'))
     .pipe(jsmin())
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('build/js'));

@@ -4,7 +4,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 27px;
-    padding-bottom: 57px;
+    padding-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -51,6 +51,7 @@
   display: block;
   padding-left: 20px;
   padding-bottom: 16px;
+  flex-shrink: 0;
 
   @media (min-width: $tablet-width) {
     padding-left: 0;
@@ -61,11 +62,13 @@
     display: block;
 
     @media (min-width: $tablet-width) {
-      width: 170px;
+      width: 174px;
+      height: 52px;
     }
 
     @media (min-width: $desktop-width) {
       width: 202px;
+      height: 59px;
     }
   }
 

@@ -6,7 +6,7 @@
 
   @media (min-width: $tablet-width) {
     border: 2px solid $basic_gray;
-    padding: 52px 38px 38px;
+    padding: 52px 38px 36px;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,7 +21,7 @@
     top: 26px;
     left: 50%;
     transform: translateX(-15px);
-    background-image: url("/img/icon-plus-mobile.svg");
+    background-image: url("/img/icons/icon-plus-mobile.svg");
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
@@ -29,7 +29,7 @@
       height: 60px;
       top: 52px;
       transform: translateX(-30px);
-      background-image: url("/img/icon-plus.svg");
+      background-image: url("/img/icons/icon-plus.svg");
     }
   }
 }
@@ -52,17 +52,17 @@
 }
 
 .more-goods__header {
-  @include font(16px, 22px);
+  @include font(16px, 20px);
   @include uppercase;
   color: $black;
   margin-top: 51px;
-  margin-bottom: 7px;
+  margin-bottom: 9px;
 
   @media (min-width: $tablet-width) {
-    font-size: 20px;
+    @include font(20px, 22px);
     padding: 0 20px;
-    margin-top: 107px;
-    margin-bottom: 23px;
+    margin-top: 109px;
+    margin-bottom: 25px;
   }
 
   @media (min-width: $desktop-width) {
