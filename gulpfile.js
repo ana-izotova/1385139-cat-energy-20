@@ -90,7 +90,7 @@ exports.webp = createWebp;
 // Sprite
 
 const sprite = () => {
-  return gulp.src('source/img/**/*.svg')
+  return gulp.src('source/img/icons/*.svg')
     .pipe(svgstore())
     .pipe(rename('sprite.svg'))
     .pipe(gulp.dest('build/img'))

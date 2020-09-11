@@ -34,6 +34,7 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
+    @include font(16px, 24px);
     padding-bottom: 0;
     border-bottom: none;
     margin-bottom: 52px;
@@ -45,8 +46,8 @@
 }
 
 .meal-program__icon--gaining {
-  @media (min-width: $tablet-width) and (max-width: $tablet-width) {
-    .meal-program__text {
+  .meal-program__text {
+    @media (min-width: $tablet-width) and (max-width: $tablet-width) {
       max-width: 343px;
     }
   }
@@ -87,7 +88,7 @@
 .meal-program__icon--loosing::after {
   width: 36px;
   height: 50px;
-  background-image: url("/img/icon-cat-slim.svg");
+  background-image: url("/img/icons/icon-cat-slim.svg");
   background-repeat: no-repeat;
   background-position: center;
   top: 22px;
@@ -113,7 +114,7 @@
 .meal-program__icon--gaining::after {
   width: 67px;
   height: 28px;
-  background-image: url("/img/icon-cat-pro.svg");
+  background-image: url("/img/icons/icon-cat-pro.svg");
   background-repeat: no-repeat;
   background-position: center;
   top: 35px;
@@ -164,7 +165,7 @@
     content: "";
     width: 32px;
     height: 10px;
-    background-image: url("/img/icon-right-arrow-long.svg");
+    background-image: url("/img/icons/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
     position: absolute;
     right: -19px;
@@ -186,7 +187,7 @@
   &:hover,
   &:focus {
     &::before {
-      background-image: url("/img/icon-right-arrow-verylong.svg");
+      background-image: url("/img/icons/icon-right-arrow-verylong.svg");
     }
   }
 }

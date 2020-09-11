@@ -103,13 +103,17 @@
   padding: 13px 15px;
   outline: none;
 
-  &:hover:not(.search-form__text-input--error),
-  &:focus:not(.search-form__text-input--error) {
+  &:hover:not(.search-form__text-input--error) {
     border: 1px solid $special_gray;
   }
 
-  &:active:not(.search-form__text-input--error) {
+  &:active:not(.search-form__text-input--error),
+  &:focus:not(.search-form__text-input--error) {
     border: 1px solid #444444;
+
+    + .search-form__icon {
+      fill: $basic-green;
+    }
   }
 
   &::placeholder {
@@ -132,19 +136,15 @@
 
 .search-form__text-input--error {
   border: 1px solid #ff8282;
+
+  + .search-form__icon {
+    fill: #ff8282;
+  }
 }
 
 .search-form__heading {
   display: flex;
   margin-bottom: 32px;
-}
-
-.search-form__heading .heading--additional-text {
-  max-width: 225px;
-
-  @media (min-width: $tablet-width) {
-    max-width: 595px;
-  }
 }
 
 .search-form__header {
@@ -179,18 +179,6 @@
     }
   }
 
-  .container {
-    @media (min-width: $tablet-width) {
-      padding-left: 71px;
-      padding-right: 65px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding-left: 111px;
-      padding-right: 110px;
-    }
-  }
-
   .search-form__wrap {
     @media (min-width: $desktop-width) {
       display: grid;
@@ -214,21 +202,16 @@
       @include font(20px, 30px);
       grid-gap: 18px;
     }
-
-    &::before {
-      content: "";
-      position: absolute;
-    }
   }
 
   .search-form__label--email {
-    &::before {
+    .search-form__icon {
+      content: "";
       width: 20px;
       height: 14px;
+      position: absolute;
       top: 17px;
       right: 14px;
-      background-image: url("/img/icon-mail.svg");
-      background-repeat: no-repeat;
 
       @media (min-width: $tablet-width) {
         top: 18px;
@@ -238,17 +221,13 @@
   }
 
   .search-form__label--tel {
-    &::before {
+    .search-form__icon {
+      content: "";
       width: 20px;
       height: 20px;
+      position: absolute;
       top: 14px;
       right: 13px;
-      background-image: url("/img/icon-phone.svg");
-      background-repeat: no-repeat;
-
-      path {
-        fill: tomato;
-      }
 
       @media (min-width: $tablet-width) {
         top: 16px;
@@ -282,18 +261,6 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 64px;
-  }
-
-  .container {
-    @media (min-width: $tablet-width) {
-      padding-left: 70px;
-      padding-right: 67px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding-left: 110px;
-      padding-right: 110px;
-    }
   }
 }
 
@@ -333,22 +300,6 @@
   .search-form__heading {
     @media (min-width: $tablet-width) {
       margin-bottom: 56px;
-    }
-  }
-
-  .container {
-    padding-bottom: 34px;
-
-    @media (min-width: $tablet-width) {
-      padding-left: 70px;
-      padding-right: 65px;
-      padding-bottom: 54px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding-left: 110px;
-      padding-right: 110px;
-      padding-bottom: 61px;
     }
   }
 
@@ -507,7 +458,7 @@
   top: 9px;
   width: 19px;
   height: 19px;
-  background-image: url("/img/icon-tick.svg");
+  background-image: url("/img/icons/icon-tick.svg");
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {

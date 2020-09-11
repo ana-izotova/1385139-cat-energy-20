@@ -16,3 +16,50 @@
     padding-right: 110px;
   }
 }
+
+.container--how-it-works {
+  @media (min-width: $tablet-width) {
+    padding-right: 105px;
+  }
+}
+
+.container--search-contacts {
+  @media (min-width: $tablet-width) {
+    padding-left: 71px;
+    padding-right: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 111px;
+    padding-right: 110px;
+  }
+}
+
+.container--search-comment {
+  @media (min-width: $tablet-width) {
+    padding-left: 70px;
+    padding-right: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
+.container--search-additional {
+  padding-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 70px;
+    padding-right: 65px;
+    padding-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-bottom: 61px;
+  }
+}
+

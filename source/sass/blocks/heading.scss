@@ -68,3 +68,11 @@
     transform: translateX(-35px);
   }
 }
+
+.heading--search-form {
+  max-width: 225px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 595px;
+  }
+}

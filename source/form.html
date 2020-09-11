@@ -7,30 +7,6 @@
   <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.min.css">
-  <style>
-    HTML {
-      background-repeat: no-repeat;
-      background-position:  50% 0;
-      /* Mobile layout by default */
-      background-image: url( "pixelGlass/form-320.jpg" );
-    }
-    /* Tablet */
-    @media ( min-width: 768px ) {
-      HTML {
-        /* Tablet layout */
-        background-image: url( "pixelGlass/form-768.jpg" );
-      }
-    }
-    /* Desktop */
-    @media ( min-width: 1440px ) {
-      HTML {
-        /* Desktop layout */
-        background-image: url( "pixelGlass/form-1440.jpg" );
-      }
-    }
-  </style>
-  <link href="pixelGlass/styles.css" rel="stylesheet">
-  <script src="pixelGlass/script.js"></script>
 </head>
 <body class="page__body">
   <header class="page-header page-header--form">
@@ -43,7 +19,7 @@
         </picture>
       </a>
       <nav class="main-nav main-nav--nojs">
-        <button class="main-nav__toggle" type="button">
+        <button class="main-nav__toggle main-nav__toggle--form" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list site-list">
@@ -101,24 +77,30 @@
           </div>
         </div>
         <div class="search-form__contacts">
-          <div class="container">
+          <div class="container container--search-contacts">
             <b class="search-form__heading heading heading--additional">
-              <span class="search-form__header heading heading--additional-text">Контактные данные (владельца кота)</span>
+              <span class="search-form__header heading heading--additional-text heading--search-form">Контактные данные (владельца кота)</span>
             </b>
             <div class="search-form__wrap">
               <label class="search-form__label search-form__label--email" for="input-email">E&#8209;mail:*
                 <input class="search-form__text-input" type="email" name="email" id="input-email" pattern="^\S{1,}@\S{2,}\.\S{2,}$" placeholder="kuklachev@gmail.com" required>
+                <svg class="search-form__icon" width="20" height="14">
+                  <use xlink:href="img/sprite.svg#icon-mail"></use>
+                </svg>
               </label>
               <label class="search-form__label search-form__label--tel" for="input-tel">Телефон:*
                 <input class="search-form__text-input" type="tel" name="tel" id="input-tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" placeholder="8 (960) 900-60-90" required>
+                <svg class="search-form__icon" width="20" height="20">
+                  <use xlink:href="img/sprite.svg#icon-phone"></use>
+                </svg>
               </label>
             </div>
           </div>
         </div>
         <div class="search-form__comment">
-          <div class="container">
+          <div class="container container--search-comment">
             <b class="search-form__heading heading heading--additional">
-              <span class="search-form__header heading heading--additional-text">Комментарий</span>
+              <span class="search-form__header heading heading--additional-text heading--search-form">Комментарий</span>
             </b>
             <label for="comment" aria-label="Оставьте ваш комментарий">
               <textarea class="search-form__textarea" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
@@ -126,9 +108,9 @@
           </div>
         </div>
         <div class="search-form__additional">
-          <div class="container">
+          <div class="container container--search-additional">
             <b class="search-form__heading heading heading--additional">
-              <span class="search-form__header heading heading--additional-text">
+              <span class="search-form__header heading heading--additional-text heading--search-form">
                 Дополнительно
               </span>
             </b>
@@ -188,15 +170,15 @@
         <ul class="socials-list">
           <li class="socials-list__item">
             <a class="socials-list__link" target="_blank" href="" aria-label="Вконтакте">
-              <svg class="socials-list__icon socials-list__vk">
-                <use xlink:href="img/sprite.svg#icon-vk" width="23" height="16"></use>
+              <svg class="socials-list__icon socials-list__vk" width="23" height="16">
+                <use xlink:href="img/sprite.svg#icon-vk"></use>
               </svg>
             </a>
           </li>
           <li class="socials-list__item">
             <a class="socials-list__link" target="_blank" href="" aria-label="Инстаграм">
-              <svg class="socials-list__icon socials-list__insta">
-                <use xlink:href="img/sprite.svg#icon-insta" width="27" height="16"></use>
+              <svg class="socials-list__icon socials-list__insta" width="27" height="16">
+                <use xlink:href="img/sprite.svg#icon-insta"></use>
               </svg>
             </a>
           </li>

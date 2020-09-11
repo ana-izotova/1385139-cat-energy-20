@@ -56,43 +56,6 @@
   }
 }
 
-.add-goods-list__details {
-  .item-details__inner-wrap {
-    @media (min-width: $tablet-width) {
-      grid-template-columns: auto auto;
-      grid-column-gap: 51px;
-      padding: 0;
-      padding-top: 3px;
-      border: none;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 286px;
-      justify-content: space-between;
-      align-items: center;
-      padding-top: 10px;
-    }
-  }
-
-  .item-details__title {
-    font-size: 14px;
-
-    @media (min-width: $tablet-width) {
-      font-size: 16px;
-      line-height: 20px;
-    }
-  }
-
-  .item-details__data {
-    font-size: 14px;
-
-    @media (min-width: $tablet-width) {
-      font-size: 16px;
-      line-height: 20px;
-    }
-  }
-}
-
 .add-goods-list__order-button {
   @media (min-width: $tablet-width) {
     width: 100%;

@@ -7,30 +7,6 @@
   <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.min.css">
-  <style>
-    HTML {
-      background-repeat: no-repeat;
-      background-position:  50% 0;
-      /* Mobile layout by default */
-      background-image: url( "pixelGlass/index-320.jpg" );
-    }
-    /* Tablet */
-    @media ( min-width: 768px ) {
-      HTML {
-        /* Tablet layout */
-        background-image: url( "pixelGlass/index-768.jpg" );
-      }
-    }
-    /* Desktop */
-    @media ( min-width: 1440px ) {
-      HTML {
-        /* Desktop layout */
-        background-image: url( "pixelGlass/index-1440.jpg" );
-      }
-    }
-  </style>
-  <link href="pixelGlass/styles.css" rel="stylesheet">
-  <script src="pixelGlass/script.js"></script>
 </head>
 <body class="page__body">
   <header class="page-header">
@@ -90,7 +66,7 @@
       </div>
     </section>
     <section class="page-main__description how-it-works">
-      <div class="container">
+      <div class="container container--how-it-works">
         <h2 class="how-it-works__header heading">Как это работает</h2>
         <ul class="how-it-works__list">
           <li class="how-it-works__item how-it-works__icon how-it-works__icon--healthy" data-number="1">
@@ -176,7 +152,7 @@
           </ul>
           <div class="living-example__toggles cat-toggles">
             <button class="cat-toggles__button" type="button" tabindex="0">Было</button>
-            <div class="cat-toggles__bar" tabindex="0" aria-label="Диапазон изменений размеров кота">
+            <div class="cat-toggles__bar" tabindex="0">
               <div class="cat-toggles__active-bar" tabindex="0" aria-label="Ползунок"></div>
             </div>
             <button class="cat-toggles__button" type="button">Стало</button>

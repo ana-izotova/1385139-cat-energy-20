@@ -21,7 +21,7 @@
     top: 26px;
     left: 50%;
     transform: translateX(-15px);
-    background-image: url("/img/icon-plus-mobile.svg");
+    background-image: url("/img/icons/icon-plus-mobile.svg");
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
@@ -29,7 +29,7 @@
       height: 60px;
       top: 52px;
       transform: translateX(-30px);
-      background-image: url("/img/icon-plus.svg");
+      background-image: url("/img/icons/icon-plus.svg");
     }
   }
 }

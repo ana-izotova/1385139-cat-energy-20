@@ -32,13 +32,8 @@
     text-decoration-color: rgba(0, 0, 0, 0.3);
     text-underline-position: under;
 
-    &:first-child {
-      //margin-right: 9px;
-    }
-
     &:last-child {
       padding-left: 0;
-      //margin-left: 5px;
     }
 
     &:hover,
